@@ -1,4 +1,4 @@
-#from src.library import *
+# from src.library import *
 import os
 import codecs
 import sys
@@ -8,68 +8,86 @@ import time
 import re
 from pyglet.window import key
 import pandas as pd
+
+
 def parse_instructions(input_data):
-    '''
+    """
     parse instruction into pages
     page break is #
-    '''
+    """
 
-    text = re.findall(r'([^#]+)', input_data) # match any chars except for #
+    text = re.findall(r"([^#]+)", input_data)  # match any chars except for #
 
     return text
 
+
 def load_instruction(PATH):
-    '''
+    """
     load and then parse instrucition
     return a list
-    '''
-    PATH = os.path.dirname(os.path.abspath(__file__)) + "//resources//ESQ//ESQ_instr.txt"
-    
-    with codecs.open(PATH, 'r', encoding='utf8') as f:
+    """
+    PATH = (
+        os.path.dirname(os.path.abspath(__file__)) + "//resources//ESQ//ESQ_instr.txt"
+    )
+
+    with codecs.open(PATH, "r", encoding="utf8") as f:
         input_data = f.read()
 
     text = parse_instructions(input_data)
 
     return text
 
+
 class my_instructions(object):
-    '''
+    """
     show instruction and wait for trigger
-    '''
-    def __init__(self, window, settings, instruction_txt, ready_txt, instruction_size, instruction_font, instruction_color, parseflag):
+    """
+
+    def __init__(
+        self,
+        window,
+        settings,
+        instruction_txt,
+        ready_txt,
+        instruction_size,
+        instruction_font,
+        instruction_color,
+        parseflag,
+    ):
         self.window = window
         self.settings = settings
-        self.env = settings['env']
+        self.env = settings["env"]
         self.instruction_txt = load_instruction(instruction_txt)
         self.ready_txt = load_instruction(ready_txt)[0]
         self.display = visual.TextStim(
-                window, text='default text', font=instruction_font,
-                name='instruction', color='black')#,
-                #pos=[-50,0], height=instruction_size, wrapWidth=1100)
-                #color=instruction_color
-                #) #object to display instructions
+            window,
+            text="default text",
+            font=instruction_font,
+            name="instruction",
+            color="black",
+        )  # ,
+        # pos=[-50,0], height=instruction_size, wrapWidth=1100)
+        # color=instruction_color
+        # ) #object to display instructions
         self.parseflag = parseflag
 
     def parse_inst(self):
 
-        
-
         return self.instruction_txt
 
     def showf(self):
-        with open('instructions/You_instr.txt') as f:
+        with open("instructions/You_instr.txt") as f:
             lines = f.read()
         instext = lines
 
-        
-        # substitue keys in the instruction text before displaying the instruction        
+        # substitue keys in the instruction text before displaying the instruction
         if self.parseflag == 1:
             self.parse_inst()
         self.display.setText(instext)
         self.display.draw()
         self.window.flip()
-        
-        event.waitKeys(keyList=['return'])
+
+        event.waitKeys(keyList=["return"])
 
     def waitTrigger(self, trigger_code):
         # wait for trigger in mri environment
@@ -77,86 +95,79 @@ class my_instructions(object):
         self.display.draw()
         self.window.flip()
 
-        if self.env == 'lab':
+        if self.env == "lab":
             core.wait(0)
-        elif self.env == 'mri':
+        elif self.env == "mri":
             event.waitKeys(keyList=[trigger_code])
-        else: # not supported
-            raise Exception('Unknown environment setting')
+        else:  # not supported
+            raise Exception("Unknown environment setting")
 
 
 def get_settings(env, ver):
     BASE = {
-    'test': False,
-    'mouse_visible': False,
-#    'logging_level': logging.INFO
-    'logging_level': logging.ERROR,
+        "test": False,
+        "mouse_visible": False,
+        #    'logging_level': logging.INFO
+        "logging_level": logging.ERROR,
     }
 
-# Laboratory setting
+    # Laboratory setting
     LAB = {
-        'env': 'lab',  # Enviroment name
+        "env": "lab",  # Enviroment name
         #'window_size': 'full_screen',
         #'window_size': (1280, 720),
-        'window_size': 'full_screen',
-        'input_method': 'keyboard'
-        }
+        "window_size": "full_screen",
+        "input_method": "keyboard",
+    }
 
     MRI = {
-        'env': 'mri',
-        'window_size': 'full_screen',
-        'input_method': 'serial',
+        "env": "mri",
+        "window_size": "full_screen",
+        "input_method": "serial",
     }
 
     # experiment specific vesion related setting
     VER_A = {
-            'txt_color': 'black',
-            'rec_keys': ['left', 'right'],
-            'rec_keyans': ['Yes', 'No'],
-            }
+        "txt_color": "black",
+        "rec_keys": ["left", "right"],
+        "rec_keyans": ["Yes", "No"],
+    }
 
     VER_B = {
-            'txt_color': 'black',
-            'rec_keys': ['left', 'right'],
-            'rec_keyans': ['Yes', 'No'],
-            }
+        "txt_color": "black",
+        "rec_keys": ["left", "right"],
+        "rec_keyans": ["Yes", "No"],
+    }
 
-    VER_A_MRI = {
-                'rec_keys': ['1', '2'],
-                'loc_keys': ['6', '7']
-                }
+    VER_A_MRI = {"rec_keys": ["1", "2"], "loc_keys": ["6", "7"]}
 
-    VER_B_MRI = {
-                'rec_keys': ['6', '7'],
-                'loc_keys': ['1', '2']
-                }
-    '''Return a dictionary of settings based on
+    VER_B_MRI = {"rec_keys": ["6", "7"], "loc_keys": ["1", "2"]}
+    """Return a dictionary of settings based on
     the specified environment, given by the parameter
     env. Can also specify whether or not to use testing settings.
 
     Include keypress counter balancing
-    '''
+    """
     # Start with the base settings
     settings = BASE
 
-
-    if env == 'lab':
+    if env == "lab":
         settings.update(LAB)
 
         # display and key press counter balancing
-        if ver == 'A':
+        if ver == "A":
             settings.update(VER_A)
-        elif ver == 'B':
+        elif ver == "B":
             settings.update(VER_B)
         else:
             raise ValueError('Version "{0}" not supported.'.format(ver))
 
-    elif env == 'mri':
+    elif env == "mri":
         settings.update(MRI)
         # display and key press counter balancing
-        if ver == 'A':
+        if ver == "A":
             settings.update(VER_A_MRI)
-        elif ver == 'B':
+        elif ver == "B":
             settings.update(VER_B_MRI)
         else:
             raise ValueError('Version "{0}" not supported.'.format(ver))
@@ -164,156 +175,197 @@ def get_settings(env, ver):
     else:
         raise ValueError('Environment "{0}" not supported.'.format(env))
 
-
     return settings
 
-def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed,movietype=None, *args, **kwargs):
-    
+
+def runexp(
+    filename,
+    timer,
+    win,
+    writers,
+    resdict,
+    runtime,
+    dfile,
+    seed,
+    movietype=None,
+    *args,
+    **kwargs
+):
 
     random.seed()
-    rs = random.randint(0,10000)
+    rs = random.randint(0, 10000)
     random.seed(a=rs)
-    
-    compcsv = pd.read_csv(os.path.join(os.getcwd(), 'taskScripts//resources//Movie_Task//csv', 'Comprehension Questions.csv'))
-    # print(compcsv)
-    split_data = compcsv.apply(lambda x: [i.split('\n') if isinstance(x, str) else i for i in x ]).apply(pd.Series)
-    split_data.Movie = split_data.Movie.apply(lambda x: x.strip())
-    split_data.set_index('Movie', inplace=True, drop=True)
-    print(split_data)
-    videoqs = split_data.loc[args[0]['videoname'].split('.')[0]]
 
-    choice = random.choice(['Question 1', 'Question 2', 'Question 3'])
-    compquestion = videoqs.loc[choice]
-    compquestion= compquestion.split('\n')
-    compquestion = [x.replace("\r", "") for x in compquestion]
-    compquestion = [x for x in compquestion if x != '']
-    comps = []
-    for x in compquestion:
-        if x[0] == "A":
-            s = x.replace("A", "1", 1)
-        elif x[0] == "B":
-            s = x.replace("B", "2", 1)
-        elif x[0] == "C":
-            s = x.replace("C", "3", 1)
-        elif x[0] == "D":
-            s = x.replace("D", "4", 1)
-        else:
-            s = x
-        comps.append(s)
-    compquestion = comps
-    print(compquestion)
-    
-    correct_answer = videoqs.loc[choice + ' Answer']
-    print(correct_answer)
-    if correct_answer[0] == 'A':
-        correct_answer = '1'
-    elif correct_answer[0] == 'B':
-        correct_answer = '2'
-    elif correct_answer[0] == 'C':
-        correct_answer = '3'
-    elif correct_answer[0] == 'D':
-        correct_answer = '4'
-    print(correct_answer)
-    
-    
     writera = writers[0]
     writerb = writers[1]
     if movietype != None:
-        resdict['Assoc Task'] = movietype
-    instr_path = './taskScripts/resources/ESQ/'  # path for instructions
-    instr_name = '_instr.txt' # filename (preceded by subtask name) for instructions
-    begin_name = 'begin_instr.txt' # beginning text, if no instruction is needed for second run
-    ready_name = 'wait_trigger.txt' # instruction: wait trigger screen
-    exp_end_name = 'taskend_instr.txt' # instruction: wait trigger screen
-    ESQ_name = 'ESQ_instr.txt'
-    end_name = 'end_instr.txt'
-    trial_setup_path = '.' # path for trial setup
-    fixed_ESQ_name = os.path.dirname(os.path.abspath(__file__)) + '//resources//ESQ//ESQ_Questions.csv' # experience sampling questions - fixed
+        resdict["Assoc Task"] = movietype
+    instr_path = "./taskScripts/resources/ESQ/"  # path for instructions
+    instr_name = "_instr.txt"  # filename (preceded by subtask name) for instructions
+    begin_name = (
+        "begin_instr.txt"  # beginning text, if no instruction is needed for second run
+    )
+    ready_name = "wait_trigger.txt"  # instruction: wait trigger screen
+    exp_end_name = "taskend_instr.txt"  # instruction: wait trigger screen
+    ESQ_name = "ESQ_instr.txt"
+    end_name = "end_instr.txt"
+    trial_setup_path = "."  # path for trial setup
+    fixed_ESQ_name = (
+        os.path.dirname(os.path.abspath(__file__))
+        + "//resources//ESQ//ESQ_Questions.csv"
+    )  # experience sampling questions - fixed
 
-    win.flip() 
-    
-    instruction_parameter = dict([
-                ('inst_size', 34), # size/height of the instruction
-                ('inst_color', 'black'), # color of the instruction
-                ('inst_font', 'sans'), # color of the instruction
-                ])
+    win.flip()
+
+    instruction_parameter = dict(
+        [
+            ("inst_size", 34),  # size/height of the instruction
+            ("inst_color", "black"),  # color of the instruction
+            ("inst_font", "sans"),  # color of the instruction
+        ]
+    )
 
     INFO = {
-            'Experiment': 'Task2019',  # compulsory: name of program, used for trial definition in ./parameter/~.csv
-            'Subject': '001',  # compulsory
-            'Version': ['A', 'B'],  # counterbalance the fixation color
-            'Run': '1',  # compulsory
-            #'Subtask': ['Self', 'Other'],  # start the task with block for Self or Other
-            'Subtask': ['Word', 'Picture', 'You', 'Friend', 'Go', 'NoGo'],  # start the task with block for Image or Word
-            'Environment': ['lab', 'mri'],  # mri version can be tested on a normal stimuli delivery pc
-            'ESQuestion': ['ES', 'No ES'], # with or without experience sampling
-            }
+        "Experiment": "Task2019",  # compulsory: name of program, used for trial definition in ./parameter/~.csv
+        "Subject": "001",  # compulsory
+        "Version": ["A", "B"],  # counterbalance the fixation color
+        "Run": "1",  # compulsory
+        #'Subtask': ['Self', 'Other'],  # start the task with block for Self or Other
+        "Subtask": [
+            "Word",
+            "Picture",
+            "You",
+            "Friend",
+            "Go",
+            "NoGo",
+        ],  # start the task with block for Image or Word
+        "Environment": [
+            "lab",
+            "mri",
+        ],  # mri version can be tested on a normal stimuli delivery pc
+        "ESQuestion": ["ES", "No ES"],  # with or without experience sampling
+    }
     ready_txt = instr_path + ready_name
 
-    #experiment_info = subject_info(INFO)
-    settings = get_settings(
-                        env='lab',
-                        ver='A')
-    #Experiment = Paradigm(escape_key='esc', color=0
+    # experiment_info = subject_info(INFO)
+    settings = get_settings(env="lab", ver="A")
+    # Experiment = Paradigm(escape_key='esc', color=0
     #                          )#window_size=settings['window_size'])
-        # hide mouse
-
+    # hide mouse
 
     ESQ_txt = instr_path + ESQ_name
     ESQ_msg = my_instructions(
-            window=win, settings=settings,
-            instruction_txt=ESQ_txt, ready_txt=ready_txt, 
-            instruction_size=instruction_parameter['inst_size'], instruction_font=instruction_parameter['inst_font'],
-            instruction_color='black', parseflag=0)
-    with open(os.path.dirname(os.path.abspath(__file__)) + "//resources//ESQ//ESQ_instr.txt") as f:
+        window=win,
+        settings=settings,
+        instruction_txt=ESQ_txt,
+        ready_txt=ready_txt,
+        instruction_size=instruction_parameter["inst_size"],
+        instruction_font=instruction_parameter["inst_font"],
+        instruction_color="black",
+        parseflag=0,
+    )
+    with open(
+        os.path.dirname(os.path.abspath(__file__)) + "//resources//ESQ//ESQ_instr.txt"
+    ) as f:
         lines = f.read()
     ESQ_msg.display.setText(lines)
     ESQ_msg.display.draw()
     ESQ_msg.window.flip()
-        
-    event.waitKeys(keyList=['return'])
-    #ESQ_msg.show()
+
+    event.waitKeys(keyList=["return"])
+    # ESQ_msg.show()
     win.flip()
 
-    ES_fixed = data.TrialHandler(nReps = 1, method = 'sequential', trialList = data.importConditions(fixed_ESQ_name), name = 'Questionnaire') 
-    #ES_random = data.TrialHandler(nReps = 1, method = 'random', trialList = data.importConditions(random_ESQ_name), name = 'Questionnaire')
+    ES_fixed = data.TrialHandler(
+        nReps=1,
+        method="sequential",
+        trialList=data.importConditions(fixed_ESQ_name),
+        name="Questionnaire",
+    )
+    # ES_random = data.TrialHandler(nReps = 1, method = 'random', trialList = data.importConditions(random_ESQ_name), name = 'Questionnaire')
 
     # Note: this is the order of the output header, very specific, just to conform with others
-    ESQ_key = ['Participant_number', 'Questionnaire_startTime', 'Questionnaire_endTime', 'TrialDuration', 'Focus', 'Future', 'Past', 'Self', 'Other', 'Emotion', 'Modality', 'Detailed', 'Deliberate', 'Problem', 'Diversity', 'Intrusive', 'Source', 'Arousal', 'Tense', 'Uncertainty']            
+    ESQ_key = [
+        "Participant_number",
+        "Questionnaire_startTime",
+        "Questionnaire_endTime",
+        "TrialDuration",
+        "Focus",
+        "Future",
+        "Past",
+        "Self",
+        "Other",
+        "Emotion",
+        "Modality",
+        "Detailed",
+        "Deliberate",
+        "Problem",
+        "Diversity",
+        "Intrusive",
+        "Source",
+        "Arousal",
+        "Tense",
+        "Uncertainty",
+    ]
 
-    ratingScale = visual.RatingScale(win, low=1, high=10, markerStart=4.5,
-            precision=10, tickMarks=[1, 10], markerColor='black', textColor='black', lineColor='black',acceptPreText='Use the left and right arrow keys',acceptSize=3
-            )
-    QuestionText = visual.TextStim(win, color = 'black', text = None , anchorHoriz = 'center', anchorVert= 'top')
-    scale_high = visual.TextStim(win, text=None,  wrapWidth=None,color='black', pos=(0.5,-0.5))
-    scale_low = visual.TextStim(win, text=None, wrapWidth=None, color='black',pos=(-0.5,-0.5))
+    ratingScale = visual.RatingScale(
+        win,
+        low=1,
+        high=10,
+        markerStart=4.5,
+        precision=10,
+        tickMarks=[1, 10],
+        markerColor="black",
+        textColor="black",
+        lineColor="black",
+        acceptPreText="Use the left and right arrow keys",
+        acceptSize=3,
+    )
+    QuestionText = visual.TextStim(
+        win, color="black", text=None, anchorHoriz="center", anchorVert="top"
+    )
+    scale_high = visual.TextStim(
+        win, text=None, wrapWidth=None, color="black", pos=(0.5, -0.5)
+    )
+    scale_low = visual.TextStim(
+        win, text=None, wrapWidth=None, color="black", pos=(-0.5, -0.5)
+    )
     random.shuffle(ES_fixed.trialList)
-    
 
     #       get each question from Questionnaire:
-    for enum, i in enumerate(range(0,len(ES_fixed.trialList))):
-        
-    #for enum, i in enumerate(range(0,1)):     #Shortened
-        #if i < len(ES_fixed.trialList):
+    for enum, i in enumerate(range(0, len(ES_fixed.trialList))):
+
+        # for enum, i in enumerate(range(0,1)):     #Shortened
+        # if i < len(ES_fixed.trialList):
         event.clearEvents()
         if i < len(ES_fixed.trialList):
             question = ES_fixed.next()
-            resdict['Timepoint'], resdict['Time'], resdict['Experience Sampling Question'] = 'ESQ', timer.getTime(), str(question['Label'] + "_start")
+            (
+                resdict["Timepoint"],
+                resdict["Time"],
+                resdict["Experience Sampling Question"],
+            ) = ("ESQ", timer.getTime(), str(question["Label"] + "_start"))
             writera.writerow(resdict)
 
-            resdict['Timepoint'], resdict['Time'],resdict['Experience Sampling Question'],resdict['Experience Sampling Response'], resdict['Auxillary Data'] = None,None,None,None,None
+            (
+                resdict["Timepoint"],
+                resdict["Time"],
+                resdict["Experience Sampling Question"],
+                resdict["Experience Sampling Response"],
+                resdict["Auxillary Data"],
+            ) = (None, None, None, None, None)
         ratingScale.noResponse = True
-        rand = random.randrange(1,10,1)
+        rand = random.randrange(1, 10, 1)
         ratingScale.markerStart = rand
-        keyState=key.KeyStateHandler()
+        keyState = key.KeyStateHandler()
 
         win.winHandle.push_handlers(keyState)
 
         pos = ratingScale.markerStart
-        inc=0.1
+        inc = 0.1
         ratingScale.noResponse = True
 
-        while ratingScale.noResponse:  #key 4 not pressed
+        while ratingScale.noResponse:  # key 4 not pressed
             if keyState[key.LEFT] is True:
                 pos -= inc
             elif keyState[key.RIGHT] is True:
@@ -324,10 +376,10 @@ def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed,movietype=
                 pos = 0
 
             ratingScale.setMarkerPos(pos)
-            QuestionText.setText(question['Questions'])
+            QuestionText.setText(question["Questions"])
             QuestionText.draw()
-            scale_high.setText(question['Scale_high'])
-            scale_low.setText(question['Scale_low'])
+            scale_high.setText(question["Scale_high"])
+            scale_low.setText(question["Scale_low"])
             scale_high.draw()
             scale_low.draw()
             ratingScale.draw()
@@ -335,92 +387,29 @@ def runexp(filename, timer, win, writers, resdict, runtime,dfile,seed,movietype=
         time.sleep(1)
         responded = ratingScale.getRating()
 
-        resdict['Timepoint'], resdict['Time'], resdict['Experience Sampling Question'], resdict['Experience Sampling Response'],resdict['Auxillary Data'] = 'ESQ', timer.getTime(), str(question['Label'] + "_response"), responded, str("Marker Started at " + str(rand +1))
-        
+        (
+            resdict["Timepoint"],
+            resdict["Time"],
+            resdict["Experience Sampling Question"],
+            resdict["Experience Sampling Response"],
+            resdict["Auxillary Data"],
+        ) = (
+            "ESQ",
+            timer.getTime(),
+            str(question["Label"] + "_response"),
+            responded,
+            str("Marker Started at " + str(rand + 1)),
+        )
+
         writera.writerow(resdict)
         writerb.writerow(resdict)
-        
-        resdict['Timepoint'], resdict['Time'],resdict['Experience Sampling Question'],resdict['Experience Sampling Response'], resdict['Auxillary Data'] = None,None,None,None,None
-    
 
-    
-    
-    
+        (
+            resdict["Timepoint"],
+            resdict["Time"],
+            resdict["Experience Sampling Question"],
+            resdict["Experience Sampling Response"],
+            resdict["Auxillary Data"],
+        ) = (None, None, None, None, None)
+
     event.clearEvents()
-    end_txt = """Have you seen this film before? \n Use the arrow keys to answer. \n Left for no, right for yes."""
-    QuestionText = visual.TextStim(win, color = 'black', text = end_txt , anchorHoriz = 'center', anchorVert= 'top',pos=(0,0.4))
-    Yes = visual.TextStim(win, text='Yes',  wrapWidth=None,color='black', pos=(0.5,-0.5))
-    No = visual.TextStim(win, text='No', wrapWidth=None, color='black',pos=(-0.5,-0.5))
-    
-    keyState=key.KeyStateHandler()
-
-    win.winHandle.push_handlers(keyState)
-    noresp = True
-    # outtext = None
-    while noresp:
-        if keyState[key.LEFT] is True:
-                outtext = "No"
-                break
-        elif keyState[key.RIGHT] is True:
-            outtext = "Yes"
-            break
-        
-        QuestionText.draw()
-        Yes.draw()
-        No.draw()
-        win.flip()
-    resdict['Timepoint'], resdict['Time'], resdict['Experience Sampling Question'], resdict['Experience Sampling Response'] = 'ESQ', timer.getTime(), end_txt, outtext
-    
-    writera.writerow(resdict)
-    writerb.writerow(resdict)
-    
-    resdict['Timepoint'], resdict['Time'],resdict['Experience Sampling Question'],resdict['Experience Sampling Response'] = None,None,None,None
-    
-    
-    event.clearEvents()
-    end_txt = compquestion[0]
-    QuestionText = visual.TextStim(win, color = 'black', text = end_txt , pos=(0,0.4), anchorHoriz = 'center', anchorVert= 'top')
-    A = visual.TextStim(win, text=compquestion[1],  wrapWidth=None,color='black', pos=(-0,-0))
-    B = visual.TextStim(win, text=compquestion[2], wrapWidth=None, color='black',pos=(-0,-0.2))
-    C = visual.TextStim(win, text=compquestion[3],  wrapWidth=None,color='black', pos=(-0,-0.4))
-    D = visual.TextStim(win, text=compquestion[4],  wrapWidth=None,color='black', pos=(-0,-0.6))
-    keyState=key.KeyStateHandler()
-
-    win.winHandle.push_handlers(keyState)
-    noresp = True
-    # outtext = None
-    while noresp:
-        if keyState[key._1] is True:
-            outtext = "1"
-            break
-        elif keyState[key._2] is True:
-            outtext = "2"
-            break
-        elif keyState[key._3] is True:
-            outtext = "3"
-            break
-        elif keyState[key._4] is True:
-            outtext = "4"
-            break
-        
-        QuestionText.draw()
-        A.draw()
-        B.draw()
-        C.draw()
-        D.draw()
-        win.flip()
-    resdict['Timepoint'], resdict['Time'], resdict['Experience Sampling Question'], resdict['Experience Sampling Response'], resdict['Auxillary Data'] = 'ESQ', timer.getTime(), end_txt, "correct" if outtext == correct_answer else "incorrect", outtext
-    
-    writera.writerow(resdict)
-    writerb.writerow(resdict)
-    
-    resdict['Timepoint'], resdict['Time'], resdict['Experience Sampling Question'], resdict['Experience Sampling Response'], resdict['Auxillary Data'] = None,None,None,None,None
-    
-    # end_msg = my_instructions(
-    #         window=win, settings=settings,
-    #         instruction_txt=end_txt, ready_txt=ready_txt, 
-    #         instruction_size=instruction_parameter['inst_size'], instruction_font=instruction_parameter['inst_font'],
-    #         instruction_color=instruction_parameter['inst_color'], parseflag=0)
-    
-
-
