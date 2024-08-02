@@ -1,5 +1,5 @@
 from psychopy import visual
-from psychopy import core, event
+from psychopy import core, event, sound
 import os.path
 import pandas as pd
 from taskScripts import ESQ
@@ -12,6 +12,8 @@ def runexp(filename, timer, win, writer, resdict, runtime, dfile, seed):
     writera = writer[1]
     writer = writer[0]
     random.seed(seed)
+    print(os.getcwd())
+    notification_sound = sound.Sound('taskScripts/resources/Movie_Task/notif.wav')  # Replace 'notification.wav' with your audio file path
 
     resdict["Timepoint"], resdict["Time"] = "Movie Task Start", timer.getTime()
     writer.writerow(resdict)
@@ -99,6 +101,7 @@ def runexp(filename, timer, win, writer, resdict, runtime, dfile, seed):
                 stim.setText(stop_screen)
                 stim.draw()
                 win.flip()
+                notification_sound.play()
                 event.waitKeys(keyList=(["return"]))
                 win.color = "white"
                 win.flip()
