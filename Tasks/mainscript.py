@@ -9,7 +9,8 @@ import sys
 import yaml
 
 # from Tasks.taskScripts import memoryTask
-import taskScripts
+# import taskScripts
+from taskScripts import ESQ, movieTask
 import os
 import random
 
@@ -35,6 +36,8 @@ class metadatacollection:
 
     # This writes info collected from the GUI into the logfile
     def collect_metadata(self):
+        if not self.sbINFO.OK :
+            quit()
         print(self.sbINFO.data)
         if not os.path.exists(os.path.join(os.getcwd(), "log_file")):
             os.mkdir(os.path.join(os.getcwd(), "log_file"))
@@ -557,7 +560,7 @@ if __name__ == "__main__":
         os.mkdir("tmp")
 
     ESQTask = task(
-        taskScripts.ESQ,
+        ESQ,
         datafile,
         datafileBackup,
         "Experience Sampling Questions",
@@ -585,7 +588,7 @@ if __name__ == "__main__":
     for game in games:
         moviegroup.append(
             task(
-                taskScripts.movieTask,
+                movieTask,
                 datafile,
                 game,
                 "Game Task",
