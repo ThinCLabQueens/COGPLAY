@@ -3,14 +3,16 @@
 
 from psychopy import core, visual, gui, event
 import pandas as pd
+import numpy as np
 import time
 import csv
 import sys
 import yaml
+import string
 
 # from Tasks.taskScripts import memoryTask
 # import taskScripts
-from taskScripts import ESQ, movieTask
+from taskScripts import ESQ, gameTask
 import os
 import random
 
@@ -45,7 +47,7 @@ class metadatacollection:
             os.path.join(
                 os.getcwd()
                 + "/log_file/output_log_{}_{}_full.csv".format(
-                    self.sbINFO.data[1], self.INFO["Experiment Seed"]
+                    self.sbINFO.data[2], self.INFO["Experiment Seed"]
                 )
             ),
             "w",
@@ -55,7 +57,7 @@ class metadatacollection:
             os.path.join(
                 os.getcwd()
                 + "/log_file/output_log_{}_{}.csv".format(
-                    self.sbINFO.data[1], self.INFO["Experiment Seed"]
+                    self.sbINFO.data[2], self.INFO["Experiment Seed"]
                 )
             ),
             "w",
@@ -157,7 +159,6 @@ class task(taskbattery, metadatacollection):
         trialclass,
         runtime,
         dfile,
-        ver,
         esq=False,
     ):  # , trialfile, ver):
         self.main_log_location = main_log_location
@@ -168,33 +169,10 @@ class task(taskbattery, metadatacollection):
         self.trialclass = trialclass  # Has something to do with writing task name into the logfile I think? Probably don't touch this.
         self.runtime = runtime  # A "universal" "maximum" time each task can take. Will not stop mid trial, but will prevent trial repetions after the set time in seconds
         self.esq = esq
-        self.ver = ver
         self.dfile = dfile
         # super.__init__()
 
     def initvers(self):
-        os.chdir(os.getcwd())
-        try:
-            f = open(os.path.join(os.getcwd(), self.dfile), "r", newline="")
-        except:
-            try:
-                f = open(
-                    os.path.join(os.path.join(os.getcwd(), "taskScripts"), self.dfile),
-                    "r",
-                    newline="",
-                )
-            except:
-                f = open(os.path.join(os.getcwd(), self.dfile), "r", newline="")
-        d_reader = csv.DictReader(f)
-
-        # get fieldnames from DictReader object and store in list
-        self.headers = d_reader.fieldnames
-        r = csv.reader(f)
-        l = []
-        for row in r:
-            l.append(row)
-
-        self.l = l
 
         incrordecr = random.choice([-1, 1])
         amnt = random.randint(5, 15)
@@ -203,124 +181,6 @@ class task(taskbattery, metadatacollection):
             metawrite = csv.writer(o)
             metawrite.writerow(" ")
             metawrite.writerow(["Runtime Mod", (amnt * incrordecr)])
-
-    def setver(self):
-        ###
-        ###   ###   NEED TO LOAD THE FILES FROM CSV AND PRESERVE THE HEADERS, THEN PUT THE OLD HEADERS INTO THE NEW BLOCK CSVs
-        ###
-        self.ver_a = random.sample(self.l, round(len(self.l) / 2))
-        b = self.l
-        for val in self.ver_a:
-            b[:] = [x for x in b if x != val]
-        random.shuffle(b)
-        b.insert(0, *[self.headers])
-        self.ver_b = b
-        random.shuffle(self.ver_a)
-
-        self.ver_a.insert(0, self.headers)
-
-        lis = [self.ver_a, self.ver_b]
-        for enum, thing in enumerate(lis):
-
-            if not os.path.exists(os.getcwd() + "//tmp"):
-                os.mkdir(os.getcwd() + "//tmp")
-            if not os.path.exists(os.getcwd() + "//tmp//%s" % (self.name)):
-                os.mkdir(os.getcwd() + "//tmp//%s" % (self.name))
-            if os.path.exists(
-                os.getcwd()
-                + "//tmp//%s"
-                % (self.name + "//" + self.name + "_version_" + str(enum) + ".csv")
-            ):
-                os.remove(
-                    os.getcwd()
-                    + "//tmp//%s"
-                    % (self.name + "//" + self.name + "_version_" + str(enum) + ".csv")
-                )
-            with open(
-                os.getcwd()
-                + "//tmp//%s"
-                % (self.name + "//" + self.name + "_version_" + str(enum) + ".csv"),
-                mode="w",
-                newline="",
-            ) as file:
-
-                file_writer = csv.writer(
-                    file, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
-                )
-                for subthing in thing:
-                    file_writer.writerow(subthing)
-        self._ver_a_name = os.getcwd() + "//tmp//%s" % (
-            self.name + "//" + self.name + "_version_" + str(0) + ".csv"
-        )
-        self._ver_b_name = os.getcwd() + "//tmp//%s" % (
-            self.name + "//" + self.name + "_version_" + str(1) + ".csv"
-        )
-
-    def setver3(self):
-        ###
-        ###   ###   NEED TO LOAD THE FILES FROM CSV AND PRESERVE THE HEADERS, THEN PUT THE OLD HEADERS INTO THE NEW BLOCK CSVs
-        ###
-        self.ver_a = random.sample(self.l, round(len(self.l) / 3))
-        b = self.l
-        for val in self.ver_a:
-            b[:] = [x for x in b if x != val]
-        random.shuffle(b)
-
-        self.ver_b = random.sample(b, round(len(b) / 2))
-        c = b
-        for val in self.ver_a:
-            c[:] = [x for x in c if x != val]
-        random.shuffle(c)
-
-        c.insert(0, *[self.headers])
-        self.ver_c = c
-
-        random.shuffle(self.ver_a)
-        random.shuffle(self.ver_b)
-
-        self.ver_a.insert(0, self.headers)
-        self.ver_b.insert(0, self.headers)
-
-        lis = [self.ver_a, self.ver_b, self.ver_c]
-        for enum, thing in enumerate(lis):
-
-            if not os.path.exists(os.getcwd() + "//tmp"):
-                os.mkdir(os.getcwd() + "//tmp")
-            if not os.path.exists(os.getcwd() + "//tmp//%s" % (self.name)):
-                os.mkdir(os.getcwd() + "//tmp//%s" % (self.name))
-            if os.path.exists(
-                os.getcwd()
-                + "//tmp//%s"
-                % (self.name + "//" + self.name + "_version_" + str(enum) + ".csv")
-            ):
-                os.remove(
-                    os.getcwd()
-                    + "//tmp//%s"
-                    % (self.name + "//" + self.name + "_version_" + str(enum) + ".csv")
-                )
-            with open(
-                os.getcwd()
-                + "//tmp//%s"
-                % (self.name + "//" + self.name + "_version_" + str(enum) + ".csv"),
-                mode="w",
-                newline="",
-            ) as file:
-
-                file_writer = csv.writer(
-                    file, delimiter=",", quotechar='"', quoting=csv.QUOTE_MINIMAL
-                )
-                for subthing in thing:
-                    file_writer.writerow(subthing)
-        self._ver_a_name = os.getcwd() + "//tmp//%s" % (
-            self.name + "//" + self.name + "_version_" + str(0) + ".csv"
-        )
-        self._ver_b_name = os.getcwd() + "//tmp//%s" % (
-            self.name + "//" + self.name + "_version_" + str(1) + ".csv"
-        )
-        self._ver_c_name = os.getcwd() + "//tmp//%s" % (
-            self.name + "//" + self.name + "_version_" + str(2) + ".csv"
-        )
-        self._ver_d_name = None
 
     def run(self, *args, **kwargs):
         print(args, kwargs)
@@ -339,6 +199,7 @@ class task(taskbattery, metadatacollection):
         writer2 = csv.DictWriter(fr, fieldnames=taskbattery.resultdict)
         fre.writerow(["EXPERIMENT DATA:", self.name])
         fre.writerow(["Start Time", taskbattery.time.getTime()])
+
         taskbattery.resultdict = {
             "Timepoint": None,
             "Time": None,
@@ -352,51 +213,19 @@ class task(taskbattery, metadatacollection):
             "Auxillary Data": None,
             "Assoc Task": None,
         }
+
         if self.esq == False:
-            if self.ver == 1:
-                dataver = self.task_module.runexp(
-                    self.backup_log_location,
-                    taskbattery.time,
-                    taskbattery.win,
-                    [writer, writer2],
-                    taskbattery.resultdict,
-                    self.runtime,
-                    self._ver_a_name,
-                    int(metacoll.INFO["Experiment Seed"]),
-                )
-            if self.ver == 2:
-                dataver = self.task_module.runexp(
-                    self.backup_log_location,
-                    taskbattery.time,
-                    taskbattery.win,
-                    [writer, writer2],
-                    taskbattery.resultdict,
-                    self.runtime,
-                    self._ver_b_name,
-                    int(metacoll.INFO["Experiment Seed"]),
-                )
-            if self.ver == 3:
-                dataver = self.task_module.runexp(
-                    self.backup_log_location,
-                    taskbattery.time,
-                    taskbattery.win,
-                    [writer, writer2],
-                    taskbattery.resultdict,
-                    self.runtime,
-                    self._ver_c_name,
-                    int(metacoll.INFO["Experiment Seed"]),
-                )
-            if self.ver == 4:
-                dataver = self.task_module.runexp(
-                    self.backup_log_location,
-                    taskbattery.time,
-                    taskbattery.win,
-                    [writer, writer2],
-                    taskbattery.resultdict,
-                    self.runtime,
-                    self._ver_d_name,
-                    int(metacoll.INFO["Experiment Seed"]),
-                )
+            # if self.ver == 1:
+            self.task_module.runexp(
+                self.backup_log_location,
+                taskbattery.time,
+                taskbattery.win,
+                [writer, writer2],
+                taskbattery.resultdict,
+                self.runtime,
+                self.dfile,
+                int(metacoll.INFO["Experiment Seed"]),
+            )
 
         if self.esq == True:
 
@@ -413,6 +242,7 @@ class task(taskbattery, metadatacollection):
                 "Auxillary Data": None,
                 "Assoc Task": taskbattery.prevname,
             }
+
             self.task_module.runexp(
                 self.backup_log_location,
                 taskbattery.time,
@@ -425,7 +255,7 @@ class task(taskbattery, metadatacollection):
                 args,
                 kwargs,
             )
-            dataver = None
+
         f.close()
         fr.close()
         taskbattery.resultdict = {
@@ -441,8 +271,7 @@ class task(taskbattery, metadatacollection):
             "Auxillary Data": None,
             "Assoc Task": None,
         }
-        if dataver != None:
-            self.name = self.name + "-" + dataver
+
         taskbattery.prevname = self.name
 
 
@@ -491,7 +320,6 @@ class taskgroup(taskbattery, metadatacollection):
                 print("Now initializing {}".format(task.name))
                 task.initvers()
                 print("Now setting up {}".format(task.name))
-                task.setver3()
                 print("Now running {}".format(task.name))
                 task.run()
                 print("Now starting ESQ for {}".format(task.name))
@@ -538,6 +366,7 @@ if __name__ == "__main__":
     INFO = {
         "Experiment Seed": random.randint(1, 9999999),
         "Subject": "Enter Name Here",
+        "Number of Games": 8
     }
 
     # Main and backup data file
@@ -566,43 +395,39 @@ if __name__ == "__main__":
         "Experience Sampling Questions",
         metacoll.sbINFO.data,
         int(metacoll.INFO["Block Runtime"]),
-        "resources/GoNoGo_Task/gonogo_stimuli.csv",
-        1,
+        None,
         esq=True,
     )
 
-    games = [
-        "Game A",
-        "Game B",
-        "Game C",
-        "Game D",
-        "Game E",
-        "Game F",
-        "Game G",
-        "Game H",
-        "Game I",
-    ]
+    numgames = metacoll.INFO["Number of Games"]
+
+    games = list(string.ascii_uppercase)[:numgames]
+
+    gamedf = pd.read_csv('taskScripts/resources/Game_Task/gamelist.csv')
+
+    gamedf['gamecode'] = np.random.permutation(gamedf['gamecode'].values)
+
+    gamedf = gamedf[gamedf['gamecode'].isin(games)]   
 
     # Defining each task as a task object
-    moviegroup = []
+    gamegroup = []
     for game in games:
-        moviegroup.append(
+        gamegroup.append(
             task(
-                movieTask,
+                gameTask,
                 datafile,
                 game,
                 "Game Task",
                 metacoll.sbINFO.data,
                 int(metacoll.INFO["Block Runtime"]),
-                "resources//Movie_Task//csv//sorted_filmList.csv",
-                1,
+                gamedf,
             )
         )
 
-    random.shuffle(moviegroup)
-    movie_main = taskgroup([moviegroup], "resources/group_inst/movie_main.txt")
+    random.shuffle(gamegroup)
+    game_main = taskgroup([gamegroup], "resources/group_inst/movie_main.txt")
 
-    fulltasklist = [movie_main]
+    fulltasklist = [game_main]
 
     tasks = fulltasklist
 

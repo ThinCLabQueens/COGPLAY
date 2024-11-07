@@ -9,14 +9,18 @@ import pandas as pd
 
 
 ###################################################################################################
-def runexp(filename, timer, win, writer, resdict, runtime, dfile, seed):
+def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
     writera = writer[1]
     writer = writer[0]
     random.seed(seed)
     print(os.getcwd())
-    notification_sound = sound.Sound('taskScripts/resources/Movie_Task/notif.wav')  # Replace 'notification.wav' with your audio file path
-        
-    resdict["Timepoint"], resdict["Time"] = "Movie Task Start", timer.getTime()
+    notification_sound = sound.Sound('taskScripts/resources/Game_Task/notif.wav')  # Replace 'notification.wav' with your audio file path
+    
+    # filename = dfile.loc[dfile['gamecode'] == gamenum, 'title']
+
+    filename = dfile[dfile.gamecode==gamenum].title.item()
+    
+    resdict["Timepoint"], resdict["Time"] = "Game Task Start", timer.getTime()
     writer.writerow(resdict)
     resdict["Timepoint"], resdict["Time"] = None, None
 
@@ -51,19 +55,19 @@ def runexp(filename, timer, win, writer, resdict, runtime, dfile, seed):
     event.waitKeys(keyList=(["return"]))
 
     # Write when it's initialized
-    resdict["Timepoint"], resdict["Time"] = "Movie Init", timer.getTime()
+    resdict["Timepoint"], resdict["Time"] = "Game Init", timer.getTime()
     writer.writerow(resdict)
     resdict["Timepoint"], resdict["Time"] = None, None
 
     # Create two different lists of videos for trial 1 and trial 2.
 
-    trialname = "Game Task-" + filename
+    trialname = filename
 
     # present film using moviestim
     resdict["Timepoint"], resdict["Time"], resdict["Auxillary Data"] = (
         "Game Start",
         timer.getTime(),
-        filename,
+        filename
     )
     writer.writerow(resdict)
     resdict["Timepoint"], resdict["Time"], resdict["Auxillary Data"] = None, None, None
