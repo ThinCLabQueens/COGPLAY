@@ -105,16 +105,16 @@ class taskbattery(metadatacollection):
         self.INFO = INFO
         self.taskexeclist = []
         self.win = visual.Window(
-            size=(1440, 960), color="white", winType="pyglet", fullscr=False
+            size=(1920, 1280), color="white", winType="pyglet", fullscr=True
         )
         self.text = text_2 = visual.TextStim(
             win=self.win,
             name="text_2",
-            text="Welcome to our experiment. \n Please follow the instructions on-screen and notify the attending researcher if anything is unclear \n We are thankful for your participation. \n Press <return/enter> to continue.",
+            text="Welcome to our experiment. \n\n Please follow the instructions on-screen and notify the attending researcher if anything is unclear. \n\n We are thankful for your participation. \n\n Press <return/enter> to continue.",
             font="Arial",
             anchorHoriz="center",
             anchorVert="center",
-            wrapWidth=None,
+            wrapWidth=1.3,
             ori=0,
             color="black",
             colorSpace="rgb",
@@ -288,7 +288,7 @@ class taskgroup(taskbattery, metadatacollection):
             font="Open Sans",
             pos=(0, 0),
             height=0.1,
-            wrapWidth=None,
+            wrapWidth=1.3,
             ori=0.0,
             color="black",
             colorSpace="rgb",
@@ -330,11 +330,11 @@ class taskgroup(taskbattery, metadatacollection):
         text_inst = visual.TextStim(
             win=taskbattery.win,
             name="text_1",
-            text="This is the end of the experiment \n Please inform the Researcher that you have finished. \n Thank you for your participation. \n Press <return/enter> to continue.",
+            text="This is the end of the experiment \n\n Please inform the Researcher that you have finished. \n\n Thank you for your participation. \n\n Press <return/enter> to continue.",
             font="Open Sans",
             pos=(0, 0),
             height=0.1,
-            wrapWidth=None,
+            wrapWidth=1.3,
             ori=0.0,
             color="black",
             colorSpace="rgb",

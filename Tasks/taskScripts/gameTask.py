@@ -25,18 +25,20 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
     resdict["Timepoint"], resdict["Time"] = None, None
 
     # user can update instructions for task here if required.
-    instructions = f"""Please ask the attending researcher to load:\n{filename}"""
+    instructions = f"""Please ask the attending researcher to load:\n\n{filename}"""
+
     start_screen = """While playing, the screen will at times prompt you to answer a series of questions related to your ongoing thoughts.
-                    \nPress enter/return when you are ready to begin.
+                    \n\nPress enter/return when you are ready to begin.
                     """
     stop_screen = (
         """Please pause the game, and press enter/return on the tablet to continue."""
     )
+
     game_screen = """Please play the game on the screen"""
 
     transition_text = """Please resume playing the game on the screen"""
     # create text stimuli to be updated for start screen instructions.
-    stim = visual.TextStim(win, "", color=[-1, -1, -1], pos=(0, 0))
+    stim = visual.TextStim(win, "", color=[-1, -1, -1], pos=(0, 0), wrapWidth = 1.4)
 
     # update text stim to include instructions for task.
     stim.setText(instructions)
