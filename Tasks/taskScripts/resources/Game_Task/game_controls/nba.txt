@@ -1,5 +1,5 @@
 NBA2K24 is a basketball simulation game.
-Try your best to win the game!
+Your goal is to win a game as the New York Liberty versus the Minnesota Lynx.
 
 Controls:
 Pause = Start >    

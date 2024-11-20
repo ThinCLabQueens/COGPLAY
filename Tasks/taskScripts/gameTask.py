@@ -120,11 +120,12 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
             newnumbers.append(s)
             continue
         newnumbers.append(selected_numbers[en] - selected_numbers[en - 1])
+        
     finaltimer = 600 - selected_numbers[-1]
     i = 0
     newtimer = core.Clock()
     while newtimer.getTime() < 600:
-        if i < 3:
+        if i < 2:
             if newtimer.getTime() > newnumbers[i]:
                 win.color = "#84ff7c"
                 win.flip()
@@ -148,8 +149,10 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
                     None,
                     None,
                 )
+
                 writera.writerow({'Timepoint':'EXPERIMENT DATA:','Time':'Experience Sampling Questions'})
                 writera.writerow({'Timepoint':'Start Time','Time':timer.getTime()})
+
                 ESQ.runexp(
                     None,
                     timer,
@@ -164,7 +167,6 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
                 i += 1
                 subTimer = core.Clock()
                 while subTimer.getTime() < 5:
-
                     stim.setText(transition_text)
                     stim.draw()
                     win.flip()
@@ -201,7 +203,7 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
 
     writera.writerow({'Timepoint':'EXPERIMENT DATA:','Time':'Experience Sampling Questions'})
     writera.writerow({'Timepoint':'Start Time','Time':timer.getTime()})
-    
+
     ESQ.runexp(
         None,
         timer,

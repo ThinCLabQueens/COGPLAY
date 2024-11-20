@@ -1,4 +1,5 @@
-This version of WORDLE is a wordsearch game, where the goal is to find words associated with the theme at the top of the screen. A certain number of hints are available.
+This version of WORDLE is a wordsearch game, where the goal is to find words associated with the theme at the top of the screen.
+A certain number of hints are available.
 
 Controls:
 Left click and drag the mouse along the letters you wish to choose to identify a word.
