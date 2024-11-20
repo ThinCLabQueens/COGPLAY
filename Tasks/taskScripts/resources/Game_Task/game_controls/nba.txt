@@ -1,0 +1,17 @@
+NBA2K24 is a basketball simulation game.
+Try your best to win the game!
+
+Controls:
+Pause = Start >    
+Move = Left Stick
+Sprint = Hold RT while moving
+
+Offense:
+Jump Shot = Hold X till meter fills
+Pass = A  Rebound = Y
+
+Defense:
+Switch Player = A  Steal = X
+Block/Rebound = Y			 
+
+

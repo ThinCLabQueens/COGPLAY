@@ -19,6 +19,8 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
     # filename = dfile.loc[dfile['gamecode'] == gamenum, 'title']
 
     filename = dfile[dfile.gamecode==gamenum].title.item()
+
+    gameinstr = dfile[dfile.gamecode==gamenum].shorthand.item().lower() + ".txt"
     
     resdict["Timepoint"], resdict["Time"] = "Game Task Start", timer.getTime()
     writer.writerow(resdict)
@@ -34,11 +36,31 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
         """Please pause the game, and press enter/return on the tablet to continue."""
     )
 
-    game_screen = """Please play the game on the screen"""
+    # try:
+    #     with open(os.path.join(os.getcwd(),"resources/Game_Task/game_controls/" + gameinstr), encoding = 'utf8') as f:
+    #         game_screen = f.read()
+
+    # except:
+    #     with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/" + gameinstr), encoding = 'utf8') as f:
+    #         game_screen = f.read()
+
+    # with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/nba(1).txt"), encoding = 'utf8') as fp:
+    #     numlines = len(fp.readlines())
+
+    with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/nba.txt"), encoding = 'utf8') as f:
+        controls = f.read()
+
+    with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/nba.txt"), encoding = 'utf8') as fp:
+        numlines = len(fp.readlines())
+
+    instrheight = 1/numlines
+
+    game_screen = visual.TextStim(win, "", color=[-1, -1, -1], pos = (0, 0), height = instrheight, alignText='center', wrapWidth = 1.3, bold=True)
 
     transition_text = """Please resume playing the game on the screen"""
+
     # create text stimuli to be updated for start screen instructions.
-    stim = visual.TextStim(win, "", color=[-1, -1, -1], pos=(0, 0), wrapWidth = 1.4)
+    stim = visual.TextStim(win, "", color=[-1, -1, -1], pos=(0, 0), alignText='center', anchorVert='center', wrapWidth = 1.3)
 
     # update text stim to include instructions for task.
     stim.setText(instructions)
@@ -74,10 +96,11 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
     writer.writerow(resdict)
     resdict["Timepoint"], resdict["Time"], resdict["Auxillary Data"] = None, None, None
 
-    def select_numbers():
-        def generate_valid_numbers():
+    def generate_valid_numbers():
             return [random.uniform(3, 8) for _ in range(100)]
 
+    def select_numbers():
+        
         while True:
             valid_numbers = generate_valid_numbers()
             random.shuffle(valid_numbers)
@@ -125,6 +148,8 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
                     None,
                     None,
                 )
+                writera.writerow({'Timepoint':'EXPERIMENT DATA:','Time':'Experience Sampling Questions'})
+                writera.writerow({'Timepoint':'Start Time','Time':timer.getTime()})
                 ESQ.runexp(
                     None,
                     timer,
@@ -146,8 +171,47 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
                 newtimer.reset()
         elif newtimer.getTime() > finaltimer:
             break
-        stim.setText(game_screen)
-        stim.draw()
+        game_screen.setText(controls)
+        game_screen.draw()
         win.flip()
+
+    win.color = "#84ff7c"
+    win.flip()
+    stim.setText(stop_screen)
+    stim.draw()
+    win.flip()
+    notification_sound.play()
+    event.waitKeys(keyList=(["return"]))
+    win.color = "white"
+    win.flip()
+
+    resdict["Assoc Task"] = None
+    resdict["Timepoint"], resdict["Time"], resdict["Auxillary Data"] = (
+        f"ESQ {i + 1}",
+        timer.getTime(),
+        selected_numbers[i],
+    )
+
+    writer.writerow(resdict)
+    resdict["Timepoint"], resdict["Time"], resdict["Auxillary Data"] = (
+        None,
+        None,
+        None,
+    )
+
+    writera.writerow({'Timepoint':'EXPERIMENT DATA:','Time':'Experience Sampling Questions'})
+    writera.writerow({'Timepoint':'Start Time','Time':timer.getTime()})
+    
+    ESQ.runexp(
+        None,
+        timer,
+        win,
+        [writer, writera],
+        resdict,
+        None,
+        None,
+        None,
+        movietype=trialname,
+    )
 
     return trialname

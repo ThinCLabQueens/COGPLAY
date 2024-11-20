@@ -107,7 +107,7 @@ class taskbattery(metadatacollection):
         self.win = visual.Window(
             size=(1920, 1280), color="white", winType="pyglet", fullscr=True
         )
-        self.text = text_2 = visual.TextStim(
+        self.text = visual.TextStim(
             win=self.win,
             name="text_2",
             text="Welcome to our experiment. \n\n Please follow the instructions on-screen and notify the attending researcher if anything is unclear. \n\n We are thankful for your participation. \n\n Press <return/enter> to continue.",
@@ -324,7 +324,7 @@ class taskgroup(taskbattery, metadatacollection):
                 task.run()
                 print("Now starting ESQ for {}".format(task.name))
                 print(task.backup_log_location)
-                taskbattery.ESQtask.run(videoname=task.backup_log_location)
+                # taskbattery.ESQtask.run(videoname=task.backup_log_location)
 
     def end(self):
         text_inst = visual.TextStim(
