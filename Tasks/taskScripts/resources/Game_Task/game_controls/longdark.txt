@@ -1,0 +1,10 @@
+The Long Dark is an exploration and survival game. Your goal is to survive by scavenging for supplies and avoiding dangerous weather and wildlife. 
+
+Controls:
+Move = Left stick  RB = Sprint
+View = Right stick  Search something = Hold A
+Search personal items = Y
+
+Icons:
+Thermometer = Temperature  Eye = Energy/sleep 
+Droplet = Thirst  Stomach = Hunger

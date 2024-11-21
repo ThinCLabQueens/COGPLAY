@@ -36,26 +36,27 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
         """Please pause the game, and press enter/return on the tablet to continue."""
     )
 
-    # try:
-    #     with open(os.path.join(os.getcwd(),"resources/Game_Task/game_controls/" + gameinstr), encoding = 'utf8') as f:
-    #         game_screen = f.read()
+    try:
+        with open(os.path.join(os.getcwd(),"resources/Game_Task/game_controls/" + gameinstr), encoding = 'utf8') as f:
+            controls = f.read()
 
-    # except:
-    #     with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/" + gameinstr), encoding = 'utf8') as f:
-    #         game_screen = f.read()
+        with open(os.path.join(os.getcwd(),"resources/Game_Task/game_controls/" + gameinstr), encoding = 'utf8') as fp:
+            numlines = len(fp.readlines())
 
-    # with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/nba(1).txt"), encoding = 'utf8') as fp:
-    #     numlines = len(fp.readlines())
+    except:
+        with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/" + gameinstr), encoding = 'utf8') as f:
+            controls = f.read()
 
-    with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/nba.txt"), encoding = 'utf8') as f:
-        controls = f.read()
+        with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/" + gameinstr), encoding = 'utf8') as fp:
+            numlines = len(fp.readlines())
 
-    with open(os.path.join(os.getcwd(),"taskScripts/resources/Game_Task/game_controls/nba.txt"), encoding = 'utf8') as fp:
-        numlines = len(fp.readlines())
+    
+    if numlines <= 10 :
+        game_screen = visual.TextStim(win, "", color=[-1, -1, -1], pos = (0, 0), alignText='center', wrapWidth = 1.3)
 
-    instrheight = 1/numlines
-
-    game_screen = visual.TextStim(win, "", color=[-1, -1, -1], pos = (0, 0), height = instrheight, alignText='center', wrapWidth = 1.3, bold=True)
+    else:
+        instrheight = 1/numlines
+        game_screen = visual.TextStim(win, "", color=[-1, -1, -1], pos = (0, 0), height = instrheight, alignText='center', wrapWidth = 1.3)
 
     transition_text = """Please resume playing the game on the screen"""
 
@@ -84,7 +85,6 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
     resdict["Timepoint"], resdict["Time"] = None, None
 
     # Create two different lists of videos for trial 1 and trial 2.
-
     trialname = filename
 
     # present film using moviestim
@@ -99,32 +99,35 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
     def generate_valid_numbers():
             return [random.uniform(3, 8) for _ in range(100)]
 
-    def select_numbers():
+    def select_numbers(numprobes=2):
         
         while True:
             valid_numbers = generate_valid_numbers()
             random.shuffle(valid_numbers)
-            selected = valid_numbers[:3]
-            if (
-                abs(selected[0] - selected[1]) >= 2
-                and abs(selected[0] - selected[2]) >= 2
-                and abs(selected[1] - selected[2]) >= 2
-            ):
+            selected = valid_numbers[:numprobes]
+            # if (
+            #     abs(selected[0] - selected[1]) >= 2
+            #     and abs(selected[0] - selected[2]) >= 2
+            #     and abs(selected[1] - selected[2]) >= 2
+            # ):
+            if abs(selected[0] - selected[1]) >= 2 :
                 return selected
 
     selected_numbers = select_numbers()
     selected_numbers = sorted([x * 60 for x in selected_numbers])
+
     newnumbers = []
     for en, s in enumerate(selected_numbers):
         if en == 0:
             newnumbers.append(s)
             continue
         newnumbers.append(selected_numbers[en] - selected_numbers[en - 1])
-        
+
     finaltimer = 600 - selected_numbers[-1]
     i = 0
     newtimer = core.Clock()
-    while newtimer.getTime() < 600:
+    tasktimer = core.Clock()
+    while newtimer.getTime() < 420:
         if i < 2:
             if newtimer.getTime() > newnumbers[i]:
                 win.color = "#84ff7c"
@@ -191,7 +194,7 @@ def runexp(gamenum, timer, win, writer, resdict, runtime, dfile, seed):
     resdict["Timepoint"], resdict["Time"], resdict["Auxillary Data"] = (
         f"ESQ {i + 1}",
         timer.getTime(),
-        selected_numbers[i],
+        tasktimer.getTime(),
     )
 
     writer.writerow(resdict)

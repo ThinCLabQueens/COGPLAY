@@ -1,0 +1,7 @@
+Sonic Superstars is a platform game where players race through levels as quickly as possible, aiming for the fastest completion times.
+After completing the level, click Y to retry. Your goal is to beat your previous time.
+
+Controls: 
+Move = Left stick
+Jump = B
+Restart = Y (after each round)

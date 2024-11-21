@@ -12,6 +12,5 @@ Pass = A  Rebound = Y
 
 Defense:
 Switch Player = A  Steal = X
-Block/Rebound = Y			 
-
+Block/Rebound = Y
 

@@ -1,0 +1,8 @@
+“Huntin’ Ducks” is a target game. Your goal is to shoot as many ducks and “strange encounters” as possible.
+If your hunt ends, click QUIT THIS HUNT, and then START HUNTIN’ to play again.
+Each time to start again, please select DYNAMITE as your item. 
+
+Controls (keyboard/mouse): 
+Aim = Mouse
+Shoot = Left click
+Pause = Escape (Esc)

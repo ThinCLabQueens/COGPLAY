@@ -1,0 +1,12 @@
+Viewfinder is a puzzle game. Your goal is to manipulate photos to find and power up teleportation machines.
+
+Controls: 
+Move = Left stick
+View = Right stick
+Jump = A
+Rewind = B
+Pick up/drop/teleport/interact with objects = X
+Aim photo = LT
+Shuffle through photos/rotate photos = D-pad
+Place photo = RT
+Pause = Start
