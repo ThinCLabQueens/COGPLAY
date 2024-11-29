@@ -366,7 +366,7 @@ if __name__ == "__main__":
     INFO = {
         "Experiment Seed": random.randint(1, 9999999),
         "Subject": "Enter Name Here",
-        "Number of Games": 8
+        "Number of Games": 6
     }
 
     # Main and backup data file
