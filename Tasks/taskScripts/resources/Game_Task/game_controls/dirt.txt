@@ -1,0 +1,8 @@
+“Dirt 5” is an off-road racing game. Your goal is to come first in the race. Each race is 3 laps.
+After the race, click A twice, and then hold down Y to race again.
+
+Controls:
+Steering Axis = Left toggle
+Gas forward = RT
+Gas backwards = LT
+Pause = Start >

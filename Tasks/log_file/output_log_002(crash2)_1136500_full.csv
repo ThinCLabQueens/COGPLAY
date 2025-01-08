@@ -1,0 +1,111 @@
+METADATA:
+Experiment Seed,Number of Games,Subject
+1136500,8,002
+Time after setup,35.33899240000005
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+EXPERIMENT DATA:,Game Task
+Start Time,41.04624209999997
+Game Task Start,41.28213609999989,,,,Game Task,1,8,,,
+Game Init,125.21611159999998,,,,Game Task,1,8,,,
+Game Start,125.21616700000004,,,,Game Task,1,8,,Wordle,
+ESQ 1,386.02146319999997,,,,Game Task,1,8,,232.09383227385263,
+ESQ,391.4108155000001,,Deliberate_start,,Game Task,1,8,,,Wordle
+ESQ,406.7854685,,Deliberate_response,7.9000000000000075,Game Task,1,8,,Marker Started at 6,Wordle
+ESQ,406.78673520000007,,Intrusive_start,,Game Task,1,8,,,Wordle
+ESQ,414.8250808,,Intrusive_response,2.699999999999999,Game Task,1,8,,Marker Started at 4,Wordle
+ESQ,414.82753990000015,,Knowledge_start,,Game Task,1,8,,,Wordle
+ESQ,422.6471264999998,,Knowledge_response,10.0,Game Task,1,8,,Marker Started at 10,Wordle
+ESQ,422.64995479999993,,Images_start,,Game Task,1,8,,,Wordle
+ESQ,430.1117235999998,,Images_response,2.1999999999999993,Game Task,1,8,,Marker Started at 3,Wordle
+ESQ,430.1153834999998,,Past_start,,Game Task,1,8,,,Wordle
+ESQ,439.7256153999999,,Past_response,6.499999999999997,Game Task,1,8,,Marker Started at 2,Wordle
+ESQ,439.7284978,,Self_start,,Game Task,1,8,,,Wordle
+ESQ,447.6596376,,Self_response,6.700000000000005,Game Task,1,8,,Marker Started at 8,Wordle
+ESQ,447.6634012000002,,Distracting_start,,Game Task,1,8,,,Wordle
+ESQ,462.10982179999996,,Distracting_response,1.2999999999999998,Game Task,1,8,,Marker Started at 6,Wordle
+ESQ,462.1136736000001,,Emotion_start,,Game Task,1,8,,,Wordle
+ESQ,472.5816164999999,,Emotion_response,5.000000000000018,Game Task,1,8,,Marker Started at 10,Wordle
+ESQ,472.5853461999998,,Absorption_start,,Game Task,1,8,,,Wordle
+ESQ,477.4758940999998,,Absorption_response,9.599999999999987,Game Task,1,8,,Marker Started at 2,Wordle
+ESQ,477.4787988999999,,Detailed_start,,Game Task,1,8,,,Wordle
+ESQ,481.3314926999999,,Detailed_response,8.39999999999999,Game Task,1,8,,Marker Started at 3,Wordle
+ESQ,481.33487720000016,,Words_start,,Game Task,1,8,,,Wordle
+ESQ,486.59560110000007,,Words_response,10.0,Game Task,1,8,,Marker Started at 8,Wordle
+ESQ,486.5992861000002,,Focus_start,,Game Task,1,8,,,Wordle
+ESQ,495.54533749999996,,Focus_response,10.0,Game Task,1,8,,Marker Started at 10,Wordle
+ESQ,495.54817260000004,,Problem_start,,Game Task,1,8,,,Wordle
+ESQ,500.13179289999994,,Problem_response,10.0,Game Task,1,8,,Marker Started at 8,Wordle
+ESQ,500.1352089999998,,Future_start,,Game Task,1,8,,,Wordle
+ESQ,507.7697469000002,,Future_response,1.0,Game Task,1,8,,Marker Started at 5,Wordle
+ESQ,507.7739912999998,,Other_start,,Game Task,1,8,,,Wordle
+ESQ,512.2339995999998,,Other_response,5.0,Game Task,1,8,,Marker Started at 5,Wordle
+ESQ,512.2371489999998,,Sounds_start,,Game Task,1,8,,,Wordle
+ESQ,517.5670941000001,,Sounds_response,1.6000000000000045,Game Task,1,8,,Marker Started at 7,Wordle
+ESQ 2,708.7180526999998,,,,Game Task,1,8,,415.49422178525174,
+ESQ,715.9789321000001,,Focus_start,,Game Task,1,8,,,Wordle
+ESQ,723.3314511000001,,Focus_response,10.0,Game Task,1,8,,Marker Started at 8,Wordle
+ESQ,723.3349384,,Future_start,,Game Task,1,8,,,Wordle
+ESQ,730.2819702999998,,Future_response,2.100000000000001,Game Task,1,8,,Marker Started at 6,Wordle
+ESQ,730.2853254999998,,Words_start,,Game Task,1,8,,,Wordle
+ESQ,735.2310399999999,,Words_response,10.0,Game Task,1,8,,Marker Started at 10,Wordle
+ESQ,735.234866,,Distracting_start,,Game Task,1,8,,,Wordle
+ESQ,743.4936753,,Distracting_response,1.500000000000015,Game Task,1,8,,Marker Started at 4,Wordle
+ESQ,743.4972653000002,,Past_start,,Game Task,1,8,,,Wordle
+ESQ,746.9263312999999,,Past_response,7.20000000000001,Game Task,1,8,,Marker Started at 10,Wordle
+ESQ,746.9304006999998,,Knowledge_start,,Game Task,1,8,,,Wordle
+ESQ,751.0981813999999,,Knowledge_response,10.0,Game Task,1,8,,Marker Started at 10,Wordle
+ESQ,751.1014988,,Sounds_start,,Game Task,1,8,,,Wordle
+ESQ,756.2049691,,Sounds_response,2.5000000000000155,Game Task,1,8,,Marker Started at 4,Wordle
+ESQ,756.2086086000002,,Intrusive_start,,Game Task,1,8,,,Wordle
+ESQ,762.1410733,,Intrusive_response,6.599999999999994,Game Task,1,8,,Marker Started at 5,Wordle
+ESQ,762.1443645000002,,Self_start,,Game Task,1,8,,,Wordle
+ESQ,765.6023176000001,,Self_response,7.3000000000000025,Game Task,1,8,,Marker Started at 8,Wordle
+ESQ,765.6055843000001,,Detailed_start,,Game Task,1,8,,,Wordle
+ESQ,780.9438760999999,,Detailed_response,8.799999999999997,Game Task,1,8,,Marker Started at 8,Wordle
+ESQ,780.9468752999999,,Deliberate_start,,Game Task,1,8,,,Wordle
+ESQ,785.8887693999998,,Deliberate_response,10.0,Game Task,1,8,,Marker Started at 4,Wordle
+ESQ,785.8926441000001,,Images_start,,Game Task,1,8,,,Wordle
+ESQ,795.5896946,,Images_response,6.599999999999996,Game Task,1,8,,Marker Started at 5,Wordle
+ESQ,795.5938282999998,,Problem_start,,Game Task,1,8,,,Wordle
+ESQ,800.6676995,,Problem_response,10.0,Game Task,1,8,,Marker Started at 3,Wordle
+ESQ,800.6711016000002,,Absorption_start,,Game Task,1,8,,,Wordle
+ESQ,810.2277449000001,,Absorption_response,10.0,Game Task,1,8,,Marker Started at 9,Wordle
+ESQ,810.2308277,,Emotion_start,,Game Task,1,8,,,Wordle
+ESQ,816.4040246000002,,Emotion_response,4.900000000000002,Game Task,1,8,,Marker Started at 3,Wordle
+ESQ,816.4075393,,Other_start,,Game Task,1,8,,,Wordle
+ESQ,829.1200888999999,,Other_response,2.2000000000000153,Game Task,1,8,,Marker Started at 2,Wordle
+ESQ 3,1020.9366318999998,,,,Game Task,1,8,,895.7202859000001,
+ESQ,1024.2245771,,Problem_start,,Game Task,1,8,,,Wordle
+ESQ,1030.8299934999998,,Problem_response,10.0,Game Task,1,8,,Marker Started at 7,Wordle
+ESQ,1030.8338703000002,,Absorption_start,,Game Task,1,8,,,Wordle
+ESQ,1035.4734354999998,,Absorption_response,10.0,Game Task,1,8,,Marker Started at 7,Wordle
+ESQ,1035.4773004,,Past_start,,Game Task,1,8,,,Wordle
+ESQ,1040.7539037,,Past_response,7.199999999999996,Game Task,1,8,,Marker Started at 6,Wordle
+ESQ,1040.7578941,,Future_start,,Game Task,1,8,,,Wordle
+ESQ,1049.7104185,,Future_response,1.9,Game Task,1,8,,Marker Started at 9,Wordle
+ESQ,1049.7138545,,Images_start,,Game Task,1,8,,,Wordle
+ESQ,1053.6682807999998,,Images_response,7.499999999999995,Game Task,1,8,,Marker Started at 6,Wordle
+ESQ,1053.6711956000001,,Sounds_start,,Game Task,1,8,,,Wordle
+ESQ,1058.3541932,,Sounds_response,2.999999999999999,Game Task,1,8,,Marker Started at 4,Wordle
+ESQ,1058.35816,,Self_start,,Game Task,1,8,,,Wordle
+ESQ,1068.7160191,,Self_response,3.9000000000000012,Game Task,1,8,,Marker Started at 7,Wordle
+ESQ,1068.7191835,,Intrusive_start,,Game Task,1,8,,,Wordle
+ESQ,1072.7461554,,Intrusive_response,7.699999999999994,Game Task,1,8,,Marker Started at 2,Wordle
+ESQ,1072.7490857999999,,Words_start,,Game Task,1,8,,,Wordle
+ESQ,1075.9124325999999,,Words_response,10.0,Game Task,1,8,,Marker Started at 5,Wordle
+ESQ,1075.9156197,,Focus_start,,Game Task,1,8,,,Wordle
+ESQ,1079.9524666999998,,Focus_response,10.0,Game Task,1,8,,Marker Started at 5,Wordle
+ESQ,1079.9564589999998,,Other_start,,Game Task,1,8,,,Wordle
+ESQ,1083.8751408,,Other_response,2.700000000000012,Game Task,1,8,,Marker Started at 9,Wordle
+ESQ,1083.8787734999999,,Detailed_start,,Game Task,1,8,,,Wordle
+ESQ,1091.4793238,,Detailed_response,9.000000000000004,Game Task,1,8,,Marker Started at 7,Wordle
+ESQ,1091.4824396000001,,Distracting_start,,Game Task,1,8,,,Wordle
+ESQ,1104.2259453999998,,Distracting_response,2.3000000000000047,Game Task,1,8,,Marker Started at 7,Wordle
+ESQ,1104.2296966000001,,Emotion_start,,Game Task,1,8,,,Wordle
+ESQ,1112.1102672,,Emotion_response,4.900000000000002,Game Task,1,8,,Marker Started at 2,Wordle
+ESQ,1112.1142032,,Deliberate_start,,Game Task,1,8,,,Wordle
+ESQ,1117.8915049,,Deliberate_response,10.0,Game Task,1,8,,Marker Started at 5,Wordle
+ESQ,1117.8945975,,Knowledge_start,,Game Task,1,8,,,Wordle
+ESQ,1121.9184662,,Knowledge_response,10.0,Game Task,1,8,,Marker Started at 3,Wordle
+EXPERIMENT DATA:,Game Task
+Start Time,1121.9335950000002

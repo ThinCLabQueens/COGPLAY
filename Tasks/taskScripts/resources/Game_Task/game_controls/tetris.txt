@@ -1,0 +1,10 @@
+Tetris is a puzzle game where players fit falling shapes together to clear lines.
+The goal of the game is to fit the falling shapes together and clear lines. After failure, select Replay to restart the game. 
+
+Controls: 
+Rotate Object = Up Arrow
+Move Object Left = Left Arrow 
+Move Object Right = Right Arrow
+Bring Object Down = Down Arrow 
+Pause = Escape (Esc)
+Restart = Press Replay
