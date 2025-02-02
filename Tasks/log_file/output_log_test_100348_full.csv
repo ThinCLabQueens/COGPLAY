@@ -1,0 +1,109 @@
+METADATA:
+Experiment Seed,Number of Games,Subject
+100348,6,test
+Time after setup,15.566139600006863
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+EXPERIMENT DATA:,Game Task
+Start Time,20.433329900028184
+Game Task Start,20.65565470000729,,,,Game Task,1,6,,,
+Game Init,118.48762700002408,,,,Game Task,1,6,,,
+Game Start,118.48768289998407,,,,Game Task,1,6,,Dirt 5,
+ESQ 1,361.53679719998036,,,,Game Task,1,6,,240.0757899700362,
+ESQ,361.8896686999942,,Detailed_start,,Game Task,1,6,,,Dirt 5
+ESQ,363.7133002000046,,Detailed_response,6.0,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,363.7210289000068,,Images_start,,Game Task,1,6,,,Dirt 5
+ESQ,364.7680370999733,,Images_response,6.0,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,364.7793293999857,,Past_start,,Game Task,1,6,,,Dirt 5
+ESQ,366.1009206000017,,Past_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,366.1071067000157,,Focus_start,,Game Task,1,6,,,Dirt 5
+ESQ,367.26950679998845,,Focus_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,367.27707040001405,,Self_start,,Game Task,1,6,,,Dirt 5
+ESQ,368.67567040002905,,Self_response,5.0,Game Task,1,6,,Marker Started at 5,Dirt 5
+ESQ,368.68132769997464,,Knowledge_start,,Game Task,1,6,,,Dirt 5
+ESQ,370.16502429998945,,Knowledge_response,6.0,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,370.1699697999866,,Future_start,,Game Task,1,6,,,Dirt 5
+ESQ,371.37502289999975,,Future_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,371.38080410001567,,Sounds_start,,Game Task,1,6,,,Dirt 5
+ESQ,372.5738017000258,,Sounds_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,372.57808449998265,,Other_start,,Game Task,1,6,,,Dirt 5
+ESQ,429.82122879999224,,Other_response,8.0,Game Task,1,6,,Marker Started at 8,Dirt 5
+ESQ,429.8317613999825,,Absorption_start,,Game Task,1,6,,,Dirt 5
+ESQ,430.92137270001695,,Absorption_response,4.0,Game Task,1,6,,Marker Started at 4,Dirt 5
+ESQ,430.92999159998726,,Deliberate_start,,Game Task,1,6,,,Dirt 5
+ESQ,432.0250364000094,,Deliberate_response,2.0,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,432.0343565000221,,Emotion_start,,Game Task,1,6,,,Dirt 5
+ESQ,433.1733063000138,,Emotion_response,2.0,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,433.18498479999835,,Words_start,,Game Task,1,6,,,Dirt 5
+ESQ,434.355061499984,,Words_response,2.0,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,434.36558899999363,,Distracting_start,,Game Task,1,6,,,Dirt 5
+ESQ,435.4594426000258,,Distracting_response,4.0,Game Task,1,6,,Marker Started at 4,Dirt 5
+ESQ,435.4710521000088,,Intrusive_start,,Game Task,1,6,,,Dirt 5
+ESQ,436.57981359999394,,Intrusive_response,7.0,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,436.58752649999224,,Problem_start,,Game Task,1,6,,,Dirt 5
+ESQ,437.68361170002026,,Problem_response,10.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ 2,593.5167627999908,,,,Game Task,1,6,,378.28060446844034,
+ESQ,593.8916987000266,,Deliberate_start,,Game Task,1,6,,,Dirt 5
+ESQ,595.3755867999862,,Deliberate_response,6.0,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,595.3864059000043,,Sounds_start,,Game Task,1,6,,,Dirt 5
+ESQ,596.4332671000157,,Sounds_response,6.0,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,596.4437785000191,,Knowledge_start,,Game Task,1,6,,,Dirt 5
+ESQ,597.5857300999924,,Knowledge_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,597.5922987000085,,Absorption_start,,Game Task,1,6,,,Dirt 5
+ESQ,598.881127599976,,Absorption_response,3.0,Game Task,1,6,,Marker Started at 3,Dirt 5
+ESQ,598.890279299987,,Self_start,,Game Task,1,6,,,Dirt 5
+ESQ,599.93462309998,,Self_response,7.0,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,599.9409468999947,,Past_start,,Game Task,1,6,,,Dirt 5
+ESQ,600.9697565999813,,Past_response,2.0,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,600.9771521000075,,Intrusive_start,,Game Task,1,6,,,Dirt 5
+ESQ,602.0098292999901,,Intrusive_response,10.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,602.0186151000089,,Images_start,,Game Task,1,6,,,Dirt 5
+ESQ,603.0965520999744,,Images_response,10.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,603.1043722999748,,Detailed_start,,Game Task,1,6,,,Dirt 5
+ESQ,604.2268432999845,,Detailed_response,2.0,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,604.2369668000028,,Future_start,,Game Task,1,6,,,Dirt 5
+ESQ,605.2976118000224,,Future_response,2.0,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,605.3049440999748,,Other_start,,Game Task,1,6,,,Dirt 5
+ESQ,606.4493099999963,,Other_response,2.0,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,606.4594576000236,,Focus_start,,Game Task,1,6,,,Dirt 5
+ESQ,607.6295876000077,,Focus_response,10.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,607.6349617000087,,Words_start,,Game Task,1,6,,,Dirt 5
+ESQ,608.7335624999832,,Words_response,8.0,Game Task,1,6,,Marker Started at 8,Dirt 5
+ESQ,608.7398053000215,,Problem_start,,Game Task,1,6,,,Dirt 5
+ESQ,609.7736738999956,,Problem_response,3.0,Game Task,1,6,,Marker Started at 3,Dirt 5
+ESQ,609.7805025000125,,Emotion_start,,Game Task,1,6,,,Dirt 5
+ESQ,610.9577408999903,,Emotion_response,4.0,Game Task,1,6,,Marker Started at 4,Dirt 5
+ESQ,610.9664185000001,,Distracting_start,,Game Task,1,6,,,Dirt 5
+ESQ,612.0775171000278,,Distracting_response,4.0,Game Task,1,6,,Marker Started at 4,Dirt 5
+ESQ 3,840.606783700001,,,,Game Task,1,6,,722.1187644000165,
+ESQ,841.0107729000156,,Images_start,,Game Task,1,6,,,Dirt 5
+ESQ,842.6476467999746,,Images_response,10.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,842.6545794000267,,Absorption_start,,Game Task,1,6,,,Dirt 5
+ESQ,843.7374793000054,,Absorption_response,3.0,Game Task,1,6,,Marker Started at 3,Dirt 5
+ESQ,843.7450279999757,,Sounds_start,,Game Task,1,6,,,Dirt 5
+ESQ,844.7625219000038,,Sounds_response,8.0,Game Task,1,6,,Marker Started at 8,Dirt 5
+ESQ,844.7766193000134,,Problem_start,,Game Task,1,6,,,Dirt 5
+ESQ,845.8496180999791,,Problem_response,6.0,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,845.857904399978,,Intrusive_start,,Game Task,1,6,,,Dirt 5
+ESQ,846.9051667000167,,Intrusive_response,7.0,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,846.9125525000272,,Knowledge_start,,Game Task,1,6,,,Dirt 5
+ESQ,848.00853739999,,Knowledge_response,5.0,Game Task,1,6,,Marker Started at 5,Dirt 5
+ESQ,848.0197664999869,,Other_start,,Game Task,1,6,,,Dirt 5
+ESQ,849.062148099998,,Other_response,5.0,Game Task,1,6,,Marker Started at 5,Dirt 5
+ESQ,849.0684428000241,,Self_start,,Game Task,1,6,,,Dirt 5
+ESQ,850.1854751000064,,Self_response,3.0,Game Task,1,6,,Marker Started at 3,Dirt 5
+ESQ,850.1918385999743,,Distracting_start,,Game Task,1,6,,,Dirt 5
+ESQ,851.3534493999905,,Distracting_response,8.0,Game Task,1,6,,Marker Started at 8,Dirt 5
+ESQ,851.3633470999775,,Detailed_start,,Game Task,1,6,,,Dirt 5
+ESQ,852.4551338999881,,Detailed_response,4.0,Game Task,1,6,,Marker Started at 4,Dirt 5
+ESQ,852.4646964999847,,Future_start,,Game Task,1,6,,,Dirt 5
+ESQ,853.493314900028,,Future_response,4.0,Game Task,1,6,,Marker Started at 4,Dirt 5
+ESQ,853.5048397000064,,Past_start,,Game Task,1,6,,,Dirt 5
+ESQ,854.6892995000235,,Past_response,6.0,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,854.6963697000174,,Deliberate_start,,Game Task,1,6,,,Dirt 5
+ESQ,855.7470745000173,,Deliberate_response,10.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,855.7535498000216,,Focus_start,,Game Task,1,6,,,Dirt 5
+ESQ,857.0254390999908,,Focus_response,5.0,Game Task,1,6,,Marker Started at 5,Dirt 5
+ESQ,857.0318946000189,,Words_start,,Game Task,1,6,,,Dirt 5
+ESQ,858.2410827000276,,Words_response,10.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,858.2485932999989,,Emotion_start,,Game Task,1,6,,,Dirt 5
+ESQ,859.28140420001,,Emotion_response,8.0,Game Task,1,6,,Marker Started at 8,Dirt 5
