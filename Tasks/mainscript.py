@@ -1,5 +1,5 @@
 # Main script written by Ian Goodall-Halliwell. Subscripts are individually credited. Many have been extensively modified, for better or for worse (probably for worse o__o ).
-
+# Original script modified for COGPLAY by Louis Chitiz
 
 from psychopy import core, visual, gui, event
 import pandas as pd
