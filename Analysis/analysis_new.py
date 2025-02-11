@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 import shutil
 from datetime import datetime
+import random
 from tqdm import tqdm
 import re
 
@@ -11,8 +12,9 @@ if os.path.exists(os.path.join(os.getcwd(),"Analysis/output.csv")):
     creation_time = os.path.getctime("Analysis/output.csv")
     creation_dt = datetime.fromtimestamp(creation_time)
     dt = creation_dt.strftime('%Y_%m_%d')
+    filecode = random.randint(10000, 99999)
 
-    shutil.move("Analysis/output.csv", "Analysis/old_output/output_" + str(dt) + ".csv")
+    shutil.move("Analysis/output.csv", "Analysis/old_output/output_" + str(dt) + "_" + str(filecode) + ".csv")
 
 output = pd.DataFrame() 
 
@@ -43,7 +45,7 @@ for file in tqdm(os.listdir("Tasks/log_file")):
             elif row['Timepoint'] == 'ESQ':
                 enum += 1
 
-                task_name = row['Assoc Task']
+                task_name = row['Assoc Task']                    
 
                 line_dict["Task_name"] = task_name.replace(" ","_")
 
@@ -51,6 +53,7 @@ for file in tqdm(os.listdir("Tasks/log_file")):
                     line_dict[row['Experience Sampling Question']]=row['Experience Sampling Response']
                 else:
                     line_dict[row['Experience Sampling Question']]=np.nan
+
 
             if enum == 16:
                 if float(row['Experience Sampling Response']) >= 1 :
@@ -67,6 +70,10 @@ for file in tqdm(os.listdir("Tasks/log_file")):
 
         continue
 
+
 test_df = pd.DataFrame(mDES)
+
+test_df = test_df[test_df.Task_name != "()"]
+
 
 test_df.to_csv('Analysis/output.csv', index = False)
