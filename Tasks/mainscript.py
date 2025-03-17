@@ -105,7 +105,7 @@ class taskbattery(metadatacollection):
         self.INFO = INFO
         self.taskexeclist = []
         self.win = visual.Window(
-            size=(1920, 1280), color="white", winType="pyglet", fullscr=True
+            size=(1920, 1280), color="white", winType="pyglet", fullscr=False
         )
         self.text = visual.TextStim(
             win=self.win,
