@@ -1,5 +1,7 @@
 METADATA:
 Experiment Seed,Number of Games,Subject
-396925,6,Enter Name Here
-Time after setup,21.38542320020497
+8065908,6,049
+Time after setup,12.122921100002714
 Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+ 
+Runtime Mod,-8

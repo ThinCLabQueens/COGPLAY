@@ -1,0 +1,109 @@
+METADATA:
+Experiment Seed,Number of Games,Subject
+4151806,6,054
+Time after setup,30.865281100035645
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+EXPERIMENT DATA:,Game Task
+Start Time,37.37163100007456
+Game Task Start,37.78551369998604,,,,Game Task,1,6,,,
+Game Init,149.52284980006516,,,,Game Task,1,6,,,
+Game Start,149.52290590002667,,,,Game Task,1,6,,The Long Dark,
+ESQ 1,434.64571630000137,,,,Game Task,1,6,,275.84783942631054,
+ESQ,439.36598020000383,,Future_start,,Game Task,1,6,,,The Long Dark
+ESQ,453.4410802000202,,Future_response,2.0,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,453.44526760000736,,Intrusive_start,,Game Task,1,6,,,The Long Dark
+ESQ,454.4765311999945,,Intrusive_response,5.0,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,454.4799919000361,,Images_start,,Game Task,1,6,,,The Long Dark
+ESQ,465.1275909000542,,Images_response,3.4000000000000092,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,465.13610750006046,,Absorption_start,,Game Task,1,6,,,The Long Dark
+ESQ,470.7866454999894,,Absorption_response,1.9999999999999982,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,470.7901147999801,,Detailed_start,,Game Task,1,6,,,The Long Dark
+ESQ,474.14738510001916,,Detailed_response,2.4999999999999987,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,474.1501784999855,,Emotion_start,,Game Task,1,6,,,The Long Dark
+ESQ,478.56323620001785,,Emotion_response,8.099999999999989,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,478.5664963000454,,Past_start,,Game Task,1,6,,,The Long Dark
+ESQ,486.38593960006256,,Past_response,3.4000000000000163,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ,486.3883330000099,,Knowledge_start,,Game Task,1,6,,,The Long Dark
+ESQ,490.6431080000475,,Knowledge_response,2.3999999999999986,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,490.6472115999786,,Other_start,,Game Task,1,6,,,The Long Dark
+ESQ,499.7874541999772,,Other_response,1.7000000000000002,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,499.79025349998847,,Deliberate_start,,Game Task,1,6,,,The Long Dark
+ESQ,503.92753089999314,,Deliberate_response,3.6000000000000165,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ,503.9305949000409,,Problem_start,,Game Task,1,6,,,The Long Dark
+ESQ,507.6855288000079,,Problem_response,9.0,Game Task,1,6,,Marker Started at 9,The Long Dark
+ESQ,507.68787530006375,,Focus_start,,Game Task,1,6,,,The Long Dark
+ESQ,510.1849490000168,,Focus_response,4.100000000000003,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,510.1882412000559,,Sounds_start,,Game Task,1,6,,,The Long Dark
+ESQ,513.2604535000864,,Sounds_response,2.1,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,513.2632479000604,,Self_start,,Game Task,1,6,,,The Long Dark
+ESQ,517.708460599999,,Self_response,6.899999999999995,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,517.7125729999971,,Words_start,,Game Task,1,6,,,The Long Dark
+ESQ,520.9871323000407,,Words_response,6.199999999999996,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,520.9904801000375,,Distracting_start,,Game Task,1,6,,,The Long Dark
+ESQ,525.3796988000395,,Distracting_response,1.100000000000008,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ 2,678.7254871000769,,,,Game Task,1,6,,416.7545546408491,
+ESQ,679.81182120007,,Problem_start,,Game Task,1,6,,,The Long Dark
+ESQ,684.5316143999808,,Problem_response,8.099999999999993,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,684.5362279000692,,Words_start,,Game Task,1,6,,,The Long Dark
+ESQ,687.4975939000724,,Words_response,7.300000000000006,Game Task,1,6,,Marker Started at 9,The Long Dark
+ESQ,687.5001002000645,,Future_start,,Game Task,1,6,,,The Long Dark
+ESQ,690.2351763000479,,Future_response,2.4999999999999987,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,690.2381989000132,,Images_start,,Game Task,1,6,,,The Long Dark
+ESQ,693.2496026000008,,Images_response,8.0,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,693.2526646000333,,Intrusive_start,,Game Task,1,6,,,The Long Dark
+ESQ,698.5398149000248,,Intrusive_response,7.299999999999993,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,698.5451528000413,,Past_start,,Game Task,1,6,,,The Long Dark
+ESQ,701.6008042000467,,Past_response,1.6999999999999993,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,701.6054736999795,,Sounds_start,,Game Task,1,6,,,The Long Dark
+ESQ,704.8271812000312,,Sounds_response,2.999999999999999,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,704.829976500012,,Deliberate_start,,Game Task,1,6,,,The Long Dark
+ESQ,708.4650091000367,,Deliberate_response,6.899999999999997,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,708.4681831999915,,Focus_start,,Game Task,1,6,,,The Long Dark
+ESQ,710.6796820000745,,Focus_response,3.0,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,710.6835277000209,,Absorption_start,,Game Task,1,6,,,The Long Dark
+ESQ,719.0119901000289,,Absorption_response,1.9999999999999991,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,719.0132625000551,,Self_start,,Game Task,1,6,,,The Long Dark
+ESQ,724.2063439000631,,Self_response,6.699999999999994,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,724.2091406000545,,Detailed_start,,Game Task,1,6,,,The Long Dark
+ESQ,726.5158251000103,,Detailed_response,7.0,Game Task,1,6,,Marker Started at 7,The Long Dark
+ESQ,726.5185865000822,,Other_start,,Game Task,1,6,,,The Long Dark
+ESQ,728.5317463000538,,Other_response,2.0,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,728.5356603000546,,Emotion_start,,Game Task,1,6,,,The Long Dark
+ESQ,730.7535005999962,,Emotion_response,7.0,Game Task,1,6,,Marker Started at 7,The Long Dark
+ESQ,730.7576069000643,,Distracting_start,,Game Task,1,6,,,The Long Dark
+ESQ,734.8037893000292,,Distracting_response,1.6999999999999984,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,734.8067806999898,,Knowledge_start,,Game Task,1,6,,,The Long Dark
+ESQ,739.32768820005,,Knowledge_response,7.9000000000000075,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ 3,932.029644299997,,,,Game Task,1,6,,782.506556599983,
+ESQ,933.9667933000019,,Future_start,,Game Task,1,6,,,The Long Dark
+ESQ,938.5779233999783,,Future_response,2.7999999999999976,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,938.5806575000752,,Other_start,,Game Task,1,6,,,The Long Dark
+ESQ,942.5238154000835,,Other_response,2.5000000000000084,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,942.5274909000145,,Words_start,,Game Task,1,6,,,The Long Dark
+ESQ,945.4577512000687,,Words_response,3.2000000000000055,Game Task,1,6,,Marker Started at 7,The Long Dark
+ESQ,945.4631737000309,,Self_start,,Game Task,1,6,,,The Long Dark
+ESQ,950.2769937000703,,Self_response,6.699999999999996,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,950.2783033000305,,Deliberate_start,,Game Task,1,6,,,The Long Dark
+ESQ,955.0255246000597,,Deliberate_response,8.59999999999999,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,955.0290440000826,,Sounds_start,,Game Task,1,6,,,The Long Dark
+ESQ,957.8776583999861,,Sounds_response,2.0,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,957.8793331000488,,Absorption_start,,Game Task,1,6,,,The Long Dark
+ESQ,961.8180993000278,,Absorption_response,2.4000000000000083,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,961.821870099986,,Images_start,,Game Task,1,6,,,The Long Dark
+ESQ,965.6888094000751,,Images_response,3.0,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,965.6915828000056,,Detailed_start,,Game Task,1,6,,,The Long Dark
+ESQ,969.2637180000311,,Detailed_response,7.399999999999995,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,969.2677485999884,,Intrusive_start,,Game Task,1,6,,,The Long Dark
+ESQ,972.6597561000381,,Intrusive_response,7.500000000000009,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ,972.6643306000624,,Problem_start,,Game Task,1,6,,,The Long Dark
+ESQ,976.8712857000064,,Problem_response,8.69999999999999,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,976.8746025,,Emotion_start,,Game Task,1,6,,,The Long Dark
+ESQ,980.5772313000634,,Emotion_response,5.8999999999999995,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,980.5806370000355,,Knowledge_start,,Game Task,1,6,,,The Long Dark
+ESQ,984.0777361000655,,Knowledge_response,2.0,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,984.0824579000473,,Distracting_start,,Game Task,1,6,,,The Long Dark
+ESQ,989.3956454000436,,Distracting_response,3.1000000000000005,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ,989.3989567999961,,Past_start,,Game Task,1,6,,,The Long Dark
+ESQ,993.0578342999797,,Past_response,2.6000000000000156,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ,993.0614518000511,,Focus_start,,Game Task,1,6,,,The Long Dark
+ESQ,997.5237237000838,,Focus_response,7.599999999999992,Game Task,1,6,,Marker Started at 4,The Long Dark
