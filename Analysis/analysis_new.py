@@ -27,7 +27,7 @@ for file in tqdm(os.listdir("Tasks/log_file")):
     if not 'full' in ftemp.split('_'):
 
         _,_,subject,seed = ftemp.split("_")
-        subject = "subject_"+str(int(re.findall(r'\d+', subject)[0]))
+        subject = "subject_"+str(re.findall(r'\d+', subject)[0])
 
 
         sub_df = pd.read_csv(os.path.join("Tasks\\log_file",file), skiprows=4)
