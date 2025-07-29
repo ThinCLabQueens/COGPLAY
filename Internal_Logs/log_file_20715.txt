@@ -1,0 +1,66 @@
+[7690606, 6, '075']
+Now initializing Game Task
+Now setting up Game Task
+Now running Game Task
+() {}
+C:\Users\Smallwood Lab\Documents\GitHub\COGPLAY\Tasks
+Now starting ESQ for Game Task
+F
+Now initializing Game Task
+Now setting up Game Task
+Now running Game Task
+() {}
+C:\Users\Smallwood Lab\Documents\GitHub\COGPLAY\Tasks
+Now starting ESQ for Game Task
+D
+Now initializing Game Task
+Now setting up Game Task
+Now running Game Task
+() {}
+C:\Users\Smallwood Lab\Documents\GitHub\COGPLAY\Tasks
+Now starting ESQ for Game Task
+E
+Now initializing Game Task
+Now setting up Game Task
+Now running Game Task
+() {}
+C:\Users\Smallwood Lab\Documents\GitHub\COGPLAY\Tasks
+Now starting ESQ for Game Task
+A
+Now initializing Game Task
+Now setting up Game Task
+Now running Game Task
+() {}
+C:\Users\Smallwood Lab\Documents\GitHub\COGPLAY\Tasks
+Now starting ESQ for Game Task
+B
+Now initializing Game Task
+Now setting up Game Task
+Now running Game Task
+() {}
+C:\Users\Smallwood Lab\Documents\GitHub\COGPLAY\Tasks
+Now starting ESQ for Game Task
+C
+Success
+5.7567 	WARNING 	The 'psychtoolbox' library cannot be loaded but is required for audio capture (use `pip install psychtoolbox` to get it). Microphone recording will be unavailable this session. Note that opening a microphone stream will raise an error.
+5.7602 	WARNING 	Speech-to-text recognition module not available (use command `pip install SpeechRecognition` to get it. Transcription will be unavailable.
+5.9527 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+28.1918 	WARNING 	Monitor specification not found. Creating a temporary one...
+429.5051 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+688.3040 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+919.8252 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1364.9447 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1603.6523 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+1837.3713 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+2306.2442 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+2533.7169 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+2754.0113 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3200.5198 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3433.4687 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+3663.7570 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+4158.7011 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+4386.3487 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+4605.8018 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+5077.2989 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+5310.0069 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
+5540.5454 	WARNING 	RatingScale unnamed RatingScale: len(labels) not equal to len(tickMarks)
