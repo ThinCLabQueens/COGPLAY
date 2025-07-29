@@ -1,0 +1,353 @@
+METADATA:
+Experiment Seed,Number of Games,Subject
+6733234,6,067
+Time after setup,9.91350769996643
+Timepoint,Time,Is_correct,Experience Sampling Question,Experience Sampling Response,Task,Task Iteration,Participant ID,Response_Key,Auxillary Data,Assoc Task
+ 
+Runtime Mod,-6
+EXPERIMENT DATA:,Game Task
+Start Time,13.534028900088742
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,428.8261675001122,,,,,,,,,
+ESQ,450.71168740000576,,Images_response,9.200000000000003,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,451.9439264999237,,Other_response,7.0,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,462.6673278999515,,Detailed_response,8.699999999999998,Game Task,1,6,,Marker Started at 8,Dirt 5
+ESQ,468.69395130011253,,Emotion_response,3.1999999999999984,Game Task,1,6,,Marker Started at 5,Dirt 5
+ESQ,478.7294405999128,,Absorption_response,3.400000000000002,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,488.04388789995573,,Focus_response,2.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,495.9077012001071,,Distracting_response,1.0000000000000047,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,499.80791929992847,,Words_response,8.599999999999994,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,502.8039927999489,,Self_response,10.0,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,508.15739269996993,,Future_response,1.0,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,513.194034300046,,Knowledge_response,5.899999999999998,Game Task,1,6,,Marker Started at 4,Dirt 5
+ESQ,519.9316577999853,,Intrusive_response,1.5,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,525.0817487000022,,Deliberate_response,7.099999999999996,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,530.1958286999725,,Past_response,4.400000000000007,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,538.9237436000258,,Sounds_response,3.700000000000006,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,545.901259599952,,Problem_response,6.999999999999994,Game Task,1,6,,Marker Started at 4,Dirt 5
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,721.5272844999563,,,,,,,,,
+ESQ,731.9801205999684,,Knowledge_response,8.499999999999995,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,737.9042199999094,,Past_response,7.799999999999992,Game Task,1,6,,Marker Started at 3,Dirt 5
+ESQ,743.8185920999385,,Absorption_response,2.500000000000005,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,748.1961461999454,,Deliberate_response,3.400000000000002,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,752.5442323999014,,Detailed_response,3.7000000000000015,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,756.5576873000246,,Sounds_response,8.499999999999995,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,764.4364960999228,,Future_response,3.399999999999998,Game Task,1,6,,Marker Started at 5,Dirt 5
+ESQ,769.4841279000975,,Other_response,6.30000000000001,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,775.2560036000796,,Emotion_response,5.100000000000017,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,780.454233400058,,Distracting_response,2.0,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,783.3701394000091,,Images_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,785.6517670000903,,Words_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,796.47741209995,,Focus_response,2.699999999999999,Game Task,1,6,,Marker Started at 4,Dirt 5
+ESQ,800.7345410000999,,Intrusive_response,3.300000000000002,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,804.6600075000897,,Problem_response,7.0,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,808.5523373999167,,Self_response,9.099999999999987,Game Task,1,6,,Marker Started at 4,Dirt 5
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,967.5280820000917,,,,,,,,,
+ESQ,1015.1559053999372,,Distracting_response,3.8000000000000007,Game Task,1,6,,Marker Started at 3,Dirt 5
+ESQ,1017.3901182999834,,Detailed_response,8.0,Game Task,1,6,,Marker Started at 8,Dirt 5
+ESQ,1036.730469699949,,Images_response,8.89999999999999,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,1041.1159959998913,,Intrusive_response,7.599999999999998,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,1045.9185989000835,,Past_response,3.699999999999999,Game Task,1,6,,Marker Started at 5,Dirt 5
+ESQ,1048.7444964998867,,Other_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,1051.724536200054,,Knowledge_response,9.0,Game Task,1,6,,Marker Started at 9,Dirt 5
+ESQ,1057.1324610998854,,Problem_response,5.400000000000009,Game Task,1,6,,Marker Started at 8,Dirt 5
+ESQ,1059.9488119001035,,Focus_response,7.0,Game Task,1,6,,Marker Started at 7,Dirt 5
+ESQ,1063.708315399941,,Words_response,7.099999999999995,Game Task,1,6,,Marker Started at 2,Dirt 5
+ESQ,1067.34051489993,,Future_response,6.0,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,1071.1786619999912,,Deliberate_response,1.4999999999999993,Game Task,1,6,,Marker Started at 3,Dirt 5
+ESQ,1075.0543875999283,,Emotion_response,7.799999999999992,Game Task,1,6,,Marker Started at 3,Dirt 5
+ESQ,1081.6543646000791,,Sounds_response,3.7000000000000024,Game Task,1,6,,Marker Started at 6,Dirt 5
+ESQ,1083.7482912999112,,Self_response,10.0,Game Task,1,6,,Marker Started at 10,Dirt 5
+ESQ,1087.3561621999834,,Absorption_response,4.900000000000015,Game Task,1,6,,Marker Started at 9,Dirt 5
+ 
+Runtime Mod,-14
+EXPERIMENT DATA:,Game Task
+Start Time,1087.3706624000333
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,1554.3298007999547,,,,,,,,,
+ESQ,1565.205525000114,,Future_response,1.9999999999999991,Game Task,1,6,,Marker Started at 3,NBA 2K24
+ESQ,1616.6868809999432,,Knowledge_response,3.5000000000000164,Game Task,1,6,,Marker Started at 10,NBA 2K24
+ESQ,1623.2831409000792,,Detailed_response,4.800000000000014,Game Task,1,6,,Marker Started at 9,NBA 2K24
+ESQ,1626.8796854000539,,Other_response,3.400000000000002,Game Task,1,6,,Marker Started at 6,NBA 2K24
+ESQ,1629.9763434999622,,Intrusive_response,3.5000000000000058,Game Task,1,6,,Marker Started at 7,NBA 2K24
+ESQ,1637.465214200085,,Self_response,4.200000000000002,Game Task,1,6,,Marker Started at 2,NBA 2K24
+ESQ,1641.0710622998886,,Past_response,3.600000000000013,Game Task,1,6,,Marker Started at 9,NBA 2K24
+ESQ,1643.11357149994,,Words_response,4.0,Game Task,1,6,,Marker Started at 4,NBA 2K24
+ESQ,1645.8428251000587,,Images_response,7.0,Game Task,1,6,,Marker Started at 7,NBA 2K24
+ESQ,1648.7267748001032,,Sounds_response,8.0,Game Task,1,6,,Marker Started at 8,NBA 2K24
+ESQ,1652.969555000076,,Focus_response,3.4000000000000163,Game Task,1,6,,Marker Started at 10,NBA 2K24
+ESQ,1655.9370428998955,,Problem_response,4.0,Game Task,1,6,,Marker Started at 4,NBA 2K24
+ESQ,1660.3172317999415,,Distracting_response,2.2999999999999985,Game Task,1,6,,Marker Started at 4,NBA 2K24
+ESQ,1663.2950879000127,,Emotion_response,4.0,Game Task,1,6,,Marker Started at 4,NBA 2K24
+ESQ,1668.669570799917,,Deliberate_response,1.4000000000000152,Game Task,1,6,,Marker Started at 10,NBA 2K24
+ESQ,1672.7834077998996,,Absorption_response,3.0,Game Task,1,6,,Marker Started at 3,NBA 2K24
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,1845.5637362000998,,,,,,,,,
+ESQ,1852.2387792998925,,Words_response,10.0,Game Task,1,6,,Marker Started at 10,NBA 2K24
+ESQ,1854.3256318001077,,Images_response,4.0,Game Task,1,6,,Marker Started at 4,NBA 2K24
+ESQ,1856.7893058001064,,Knowledge_response,5.0,Game Task,1,6,,Marker Started at 5,NBA 2K24
+ESQ,1859.9015784000512,,Deliberate_response,5.0,Game Task,1,6,,Marker Started at 5,NBA 2K24
+ESQ,1864.8347934000194,,Focus_response,5.799999999999997,Game Task,1,6,,Marker Started at 5,NBA 2K24
+ESQ,1867.6540190000087,,Self_response,9.000000000000004,Game Task,1,6,,Marker Started at 10,NBA 2K24
+ESQ,1869.521700100042,,Absorption_response,6.399999999999999,Game Task,1,6,,Marker Started at 6,NBA 2K24
+ESQ,1872.2003774999175,,Detailed_response,1.9,Game Task,1,6,,Marker Started at 2,NBA 2K24
+ESQ,1874.1278802000452,,Other_response,8.200000000000003,Game Task,1,6,,Marker Started at 9,NBA 2K24
+ESQ,1876.7754554001149,,Problem_response,5.500000000000009,Game Task,1,6,,Marker Started at 8,NBA 2K24
+ESQ,1879.3730967000592,,Emotion_response,6.000000000000011,Game Task,1,6,,Marker Started at 9,NBA 2K24
+ESQ,1881.4965872000903,,Future_response,7.599999999999994,Game Task,1,6,,Marker Started at 6,NBA 2K24
+ESQ,1883.4571038000286,,Intrusive_response,3.5999999999999988,Game Task,1,6,,Marker Started at 5,NBA 2K24
+ESQ,1885.7294421000406,,Past_response,8.499999999999995,Game Task,1,6,,Marker Started at 7,NBA 2K24
+ESQ,1887.981253999984,,Sounds_response,8.099999999999996,Game Task,1,6,,Marker Started at 7,NBA 2K24
+ESQ,1890.1056750998832,,Distracting_response,9.299999999999995,Game Task,1,6,,Marker Started at 8,NBA 2K24
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,2047.0647634998895,,,,,,,,,
+ESQ,2049.900903099915,,Emotion_response,4.0,Game Task,1,6,,Marker Started at 4,NBA 2K24
+ESQ,2051.4927046000957,,Intrusive_response,6.0,Game Task,1,6,,Marker Started at 6,NBA 2K24
+ESQ,2052.9013908000197,,Self_response,3.0,Game Task,1,6,,Marker Started at 3,NBA 2K24
+ESQ,2054.3514872000087,,Other_response,7.0,Game Task,1,6,,Marker Started at 7,NBA 2K24
+ESQ,2055.8819589000195,,Absorption_response,7.0,Game Task,1,6,,Marker Started at 7,NBA 2K24
+ESQ,2059.9755420999136,,Problem_response,7.099999999999996,Game Task,1,6,,Marker Started at 6,NBA 2K24
+ESQ,2062.0775830999482,,Knowledge_response,6.000000000000007,Game Task,1,6,,Marker Started at 8,NBA 2K24
+ESQ,2065.453553200001,,Future_response,5.800000000000011,Game Task,1,6,,Marker Started at 9,NBA 2K24
+ESQ,2068.7059981001075,,Distracting_response,7.500000000000005,Game Task,1,6,,Marker Started at 9,NBA 2K24
+ESQ,2072.9954741999973,,Past_response,5.0,Game Task,1,6,,Marker Started at 5,NBA 2K24
+ESQ,2076.091885200003,,Detailed_response,2.0,Game Task,1,6,,Marker Started at 2,NBA 2K24
+ESQ,2095.880020600045,,Sounds_response,6.0,Game Task,1,6,,Marker Started at 6,NBA 2K24
+ESQ,2097.2536665000953,,Focus_response,8.0,Game Task,1,6,,Marker Started at 8,NBA 2K24
+ESQ,2099.217173000099,,Words_response,5.0,Game Task,1,6,,Marker Started at 5,NBA 2K24
+ESQ,2104.229510500096,,Deliberate_response,5.400000000000006,Game Task,1,6,,Marker Started at 7,NBA 2K24
+ESQ,2106.2513176999055,,Images_response,10.0,Game Task,1,6,,Marker Started at 10,NBA 2K24
+ 
+Runtime Mod,15
+EXPERIMENT DATA:,Game Task
+Start Time,2106.2610989001114
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,2489.3493637999054,,,,,,,,,
+ESQ,2509.9534809000324,,Distracting_response,6.400000000000006,Game Task,1,6,,Marker Started at 8,Wordle
+ESQ,2513.282079400029,,Emotion_response,10.0,Game Task,1,6,,Marker Started at 10,Wordle
+ESQ,2517.6764903999865,,Sounds_response,3.9000000000000097,Game Task,1,6,,Marker Started at 8,Wordle
+ESQ,2522.1006817999296,,Images_response,3.6000000000000165,Game Task,1,6,,Marker Started at 10,Wordle
+ESQ,2526.2281341000926,,Future_response,5.899999999999999,Game Task,1,6,,Marker Started at 3,Wordle
+ESQ,2530.6860964000225,,Focus_response,6.0,Game Task,1,6,,Marker Started at 6,Wordle
+ESQ,2536.3925282999408,,Deliberate_response,6.999999999999993,Game Task,1,6,,Marker Started at 5,Wordle
+ESQ,2543.0421959001105,,Detailed_response,4.0,Game Task,1,6,,Marker Started at 4,Wordle
+ESQ,2547.611402800074,,Past_response,3.300000000000002,Game Task,1,6,,Marker Started at 6,Wordle
+ESQ,2551.718256100081,,Other_response,2.1999999999999984,Game Task,1,6,,Marker Started at 4,Wordle
+ESQ,2556.1666466998868,,Problem_response,4.100000000000014,Game Task,1,6,,Marker Started at 9,Wordle
+ESQ,2562.6384747999255,,Knowledge_response,2.3999999999999995,Game Task,1,6,,Marker Started at 3,Wordle
+ESQ,2568.1323394000065,,Self_response,7.399999999999992,Game Task,1,6,,Marker Started at 4,Wordle
+ESQ,2571.477932000067,,Words_response,2.0,Game Task,1,6,,Marker Started at 2,Wordle
+ESQ,2580.7387882000767,,Absorption_response,5.699999999999998,Game Task,1,6,,Marker Started at 4,Wordle
+ESQ,2586.6764350999147,,Intrusive_response,3.099999999999999,Game Task,1,6,,Marker Started at 4,Wordle
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,2758.183583999984,,,,,,,,,
+ESQ,2763.653791199904,,Distracting_response,3.5000000000000058,Game Task,1,6,,Marker Started at 7,Wordle
+ESQ,2768.3044823000673,,Problem_response,6.099999999999998,Game Task,1,6,,Marker Started at 3,Wordle
+ESQ,2772.4283604999073,,Emotion_response,5.400000000000001,Game Task,1,6,,Marker Started at 2,Wordle
+ESQ,2776.232429600088,,Other_response,3.0000000000000053,Game Task,1,6,,Marker Started at 7,Wordle
+ESQ,2780.6546239000745,,Sounds_response,2.000000000000015,Game Task,1,6,,Marker Started at 10,Wordle
+ESQ,2784.6249812000897,,Absorption_response,2.700000000000005,Game Task,1,6,,Marker Started at 7,Wordle
+ESQ,2786.9726772001013,,Words_response,7.0,Game Task,1,6,,Marker Started at 7,Wordle
+ESQ,2794.8492066001054,,Knowledge_response,5.500000000000012,Game Task,1,6,,Marker Started at 9,Wordle
+ESQ,2799.4528423000593,,Future_response,3.400000000000002,Game Task,1,6,,Marker Started at 6,Wordle
+ESQ,2803.5779413001146,,Past_response,4.100000000000007,Game Task,1,6,,Marker Started at 7,Wordle
+ESQ,2806.824712499976,,Intrusive_response,3.8000000000000025,Game Task,1,6,,Marker Started at 6,Wordle
+ESQ,2809.70560440002,,Deliberate_response,7.0,Game Task,1,6,,Marker Started at 7,Wordle
+ESQ,2815.6168277999386,,Detailed_response,10.0,Game Task,1,6,,Marker Started at 10,Wordle
+ESQ,2819.1481015000027,,Images_response,3.5000000000000013,Game Task,1,6,,Marker Started at 2,Wordle
+ESQ,2822.577933100052,,Focus_response,4.200000000000006,Game Task,1,6,,Marker Started at 7,Wordle
+ESQ,2826.276576699922,,Self_response,5.500000000000016,Game Task,1,6,,Marker Started at 10,Wordle
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,2981.3006416000426,,,,,,,,,
+ESQ,2988.300260399934,,Other_response,6.699999999999994,Game Task,1,6,,Marker Started at 5,Wordle
+ESQ,2991.8110563000664,,Knowledge_response,7.999999999999989,Game Task,1,6,,Marker Started at 5,Wordle
+ESQ,2997.438378999941,,Intrusive_response,5.699999999999998,Game Task,1,6,,Marker Started at 4,Wordle
+ESQ,3000.41883910005,,Sounds_response,2.4999999999999987,Game Task,1,6,,Marker Started at 4,Wordle
+ESQ,3005.9165721999016,,Future_response,4.000000000000003,Game Task,1,6,,Marker Started at 6,Wordle
+ESQ,3008.2926684000995,,Words_response,7.0,Game Task,1,6,,Marker Started at 7,Wordle
+ESQ,3014.9787810000125,,Focus_response,4.100000000000003,Game Task,1,6,,Marker Started at 6,Wordle
+ESQ,3017.292535400018,,Detailed_response,9.0,Game Task,1,6,,Marker Started at 9,Wordle
+ESQ,3020.291267799912,,Deliberate_response,2.799999999999999,Game Task,1,6,,Marker Started at 4,Wordle
+ESQ,3025.7496179998852,,Images_response,7.299999999999992,Game Task,1,6,,Marker Started at 5,Wordle
+ESQ,3041.4971944999415,,Absorption_response,3.0000000000000018,Game Task,1,6,,Marker Started at 6,Wordle
+ESQ,3045.626737700077,,Past_response,3.800000000000013,Game Task,1,6,,Marker Started at 9,Wordle
+ESQ,3047.9427565999795,,Self_response,10.0,Game Task,1,6,,Marker Started at 10,Wordle
+ESQ,3051.868349999888,,Emotion_response,7.999999999999991,Game Task,1,6,,Marker Started at 3,Wordle
+ESQ,3061.468626799993,,Problem_response,2.0,Game Task,1,6,,Marker Started at 2,Wordle
+ESQ,3065.786996799987,,Distracting_response,5.0,Game Task,1,6,,Marker Started at 5,Wordle
+ 
+Runtime Mod,7
+EXPERIMENT DATA:,Game Task
+Start Time,3065.8006899999455
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,3563.119608100038,,,,,,,,,
+ESQ,3567.9453183999285,,Sounds_response,3.2999999999999985,Game Task,1,6,,Marker Started at 5,Tetris Effect: Connected
+ESQ,3577.170935299946,,Intrusive_response,4.600000000000017,Game Task,1,6,,Marker Started at 10,Tetris Effect: Connected
+ESQ,3586.003598500043,,Words_response,7.999999999999992,Game Task,1,6,,Marker Started at 2,Tetris Effect: Connected
+ESQ,3590.567316300003,,Problem_response,8.799999999999988,Game Task,1,6,,Marker Started at 3,Tetris Effect: Connected
+ESQ,3593.7112720001023,,Deliberate_response,8.999999999999986,Game Task,1,6,,Marker Started at 4,Tetris Effect: Connected
+ESQ,3598.676865299931,,Focus_response,3.800000000000013,Game Task,1,6,,Marker Started at 9,Tetris Effect: Connected
+ESQ,3602.1012893998995,,Self_response,7.899999999999993,Game Task,1,6,,Marker Started at 6,Tetris Effect: Connected
+ESQ,3606.611059699906,,Detailed_response,3.7000000000000006,Game Task,1,6,,Marker Started at 3,Tetris Effect: Connected
+ESQ,3609.178874900099,,Absorption_response,3.0,Game Task,1,6,,Marker Started at 3,Tetris Effect: Connected
+ESQ,3614.055401700083,,Past_response,3.300000000000002,Game Task,1,6,,Marker Started at 6,Tetris Effect: Connected
+ESQ,3624.299305799883,,Knowledge_response,5.0,Game Task,1,6,,Marker Started at 5,Tetris Effect: Connected
+ESQ,3626.5014355999883,,Future_response,2.0,Game Task,1,6,,Marker Started at 2,Tetris Effect: Connected
+ESQ,3629.0697604999878,,Images_response,8.0,Game Task,1,6,,Marker Started at 8,Tetris Effect: Connected
+ESQ,3632.4020704000723,,Distracting_response,3.400000000000002,Game Task,1,6,,Marker Started at 6,Tetris Effect: Connected
+ESQ,3636.547783399932,,Other_response,4.000000000000013,Game Task,1,6,,Marker Started at 9,Tetris Effect: Connected
+ESQ,3640.103293000022,,Emotion_response,7.199999999999992,Game Task,1,6,,Marker Started at 5,Tetris Effect: Connected
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,3853.570272800047,,,,,,,,,
+ESQ,3859.3816480999812,,Sounds_response,4.700000000000003,Game Task,1,6,,Marker Started at 2,Tetris Effect: Connected
+ESQ,3862.779705299996,,Detailed_response,7.000000000000007,Game Task,1,6,,Marker Started at 9,Tetris Effect: Connected
+ESQ,3868.071970500052,,Problem_response,2.0,Game Task,1,6,,Marker Started at 2,Tetris Effect: Connected
+ESQ,3871.3490512999706,,Emotion_response,7.10000000000001,Game Task,1,6,,Marker Started at 10,Tetris Effect: Connected
+ESQ,3874.8397284999955,,Other_response,5.899999999999999,Game Task,1,6,,Marker Started at 3,Tetris Effect: Connected
+ESQ,3878.5706883000676,,Focus_response,5.400000000000006,Game Task,1,6,,Marker Started at 7,Tetris Effect: Connected
+ESQ,3881.1062409000006,,Images_response,6.300000000000006,Game Task,1,6,,Marker Started at 8,Tetris Effect: Connected
+ESQ,3884.277753900038,,Knowledge_response,8.0,Game Task,1,6,,Marker Started at 8,Tetris Effect: Connected
+ESQ,3887.321721599903,,Intrusive_response,3.999999999999999,Game Task,1,6,,Marker Started at 5,Tetris Effect: Connected
+ESQ,3890.1593786999583,,Deliberate_response,6.900000000000011,Game Task,1,6,,Marker Started at 10,Tetris Effect: Connected
+ESQ,3892.94969379995,,Past_response,4.200000000000002,Game Task,1,6,,Marker Started at 2,Tetris Effect: Connected
+ESQ,3896.027831299929,,Future_response,5.899999999999997,Game Task,1,6,,Marker Started at 5,Tetris Effect: Connected
+ESQ,3898.900005900068,,Absorption_response,6.700000000000008,Game Task,1,6,,Marker Started at 9,Tetris Effect: Connected
+ESQ,3903.5040525000077,,Words_response,6.099999999999998,Game Task,1,6,,Marker Started at 3,Tetris Effect: Connected
+ESQ,3908.0313667000737,,Distracting_response,6.599999999999996,Game Task,1,6,,Marker Started at 3,Tetris Effect: Connected
+ESQ,3910.7606599000283,,Self_response,6.700000000000008,Game Task,1,6,,Marker Started at 9,Tetris Effect: Connected
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,4108.5542768999,,,,,,,,,
+ESQ,4114.508089199895,,Focus_response,7.0,Game Task,1,6,,Marker Started at 7,Tetris Effect: Connected
+ESQ,4117.06978609995,,Future_response,7.0000000000000036,Game Task,1,6,,Marker Started at 8,Tetris Effect: Connected
+ESQ,4120.877978099976,,Knowledge_response,6.0,Game Task,1,6,,Marker Started at 6,Tetris Effect: Connected
+ESQ,4122.903932299931,,Emotion_response,8.0,Game Task,1,6,,Marker Started at 8,Tetris Effect: Connected
+ESQ,4125.068162200041,,Sounds_response,2.0,Game Task,1,6,,Marker Started at 2,Tetris Effect: Connected
+ESQ,4127.1580199999735,,Problem_response,3.0,Game Task,1,6,,Marker Started at 3,Tetris Effect: Connected
+ESQ,4128.8994354000315,,Images_response,2.0,Game Task,1,6,,Marker Started at 2,Tetris Effect: Connected
+ESQ,4133.176578399958,,Other_response,5.500000000000016,Game Task,1,6,,Marker Started at 10,Tetris Effect: Connected
+ESQ,4136.151953999884,,Absorption_response,6.0,Game Task,1,6,,Marker Started at 6,Tetris Effect: Connected
+ESQ,4138.148907100083,,Intrusive_response,2.0,Game Task,1,6,,Marker Started at 2,Tetris Effect: Connected
+ESQ,4140.091766800033,,Self_response,9.0,Game Task,1,6,,Marker Started at 9,Tetris Effect: Connected
+ESQ,4142.4539934999775,,Past_response,4.0,Game Task,1,6,,Marker Started at 4,Tetris Effect: Connected
+ESQ,4144.894397600088,,Words_response,7.0,Game Task,1,6,,Marker Started at 7,Tetris Effect: Connected
+ESQ,4146.3454928998835,,Deliberate_response,6.0,Game Task,1,6,,Marker Started at 6,Tetris Effect: Connected
+ESQ,4149.149848199915,,Distracting_response,7.0,Game Task,1,6,,Marker Started at 7,Tetris Effect: Connected
+ESQ,4150.507854799973,,Detailed_response,9.0,Game Task,1,6,,Marker Started at 9,Tetris Effect: Connected
+ 
+Runtime Mod,-5
+EXPERIMENT DATA:,Game Task
+Start Time,4150.514682800043
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,4598.406122500077,,,,,,,,,
+ESQ,4619.908700299915,,Absorption_response,4.900000000000011,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,4623.148546400014,,Deliberate_response,3.300000000000009,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,4626.382260200102,,Knowledge_response,8.0,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,4630.732822000049,,Other_response,2.0,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,4634.350420499919,,Distracting_response,3.1000000000000125,Game Task,1,6,,Marker Started at 9,The Long Dark
+ESQ,4638.214044600027,,Words_response,8.199999999999989,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,4641.914731000084,,Emotion_response,6.7999999999999945,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,4645.900771300076,,Sounds_response,5.999999999999998,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,4650.558618600015,,Focus_response,5.500000000000009,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,4653.868733200012,,Future_response,4.500000000000018,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ,4656.178908499889,,Problem_response,8.0,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,4659.242202300113,,Detailed_response,5.500000000000012,Game Task,1,6,,Marker Started at 9,The Long Dark
+ESQ,4660.3789299000055,,Self_response,2.0,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,4662.5924716000445,,Past_response,3.0,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,4665.7169796000235,,Images_response,6.0,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,4668.874749199953,,Intrusive_response,7.0,Game Task,1,6,,Marker Started at 7,The Long Dark
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,4845.657100300072,,,,,,,,,
+ESQ,4851.298992200056,,Deliberate_response,4.8000000000000105,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,4855.654473999981,,Problem_response,8.19999999999999,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,4860.0772752000485,,Absorption_response,5.400000000000009,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,4863.85095439991,,Images_response,7.399999999999995,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,4867.679297799943,,Emotion_response,7.199999999999992,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,4871.623309700051,,Distracting_response,3.0,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,4876.936552400002,,Focus_response,2.499999999999998,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,4879.359033999965,,Self_response,10.0,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ,4882.579026800115,,Detailed_response,6.0,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,4885.718850000063,,Other_response,9.0,Game Task,1,6,,Marker Started at 9,The Long Dark
+ESQ,4887.668763600057,,Words_response,5.0,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,4889.984992499929,,Knowledge_response,5.0,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,4893.220290400088,,Future_response,5.200000000000001,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,4897.090326800011,,Intrusive_response,2.0,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,4899.20900640008,,Past_response,8.0,Game Task,1,6,,Marker Started at 8,The Long Dark
+ESQ,4901.790536599932,,Sounds_response,6.0,Game Task,1,6,,Marker Started at 6,The Long Dark
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,5061.824026599992,,,,,,,,,
+ESQ,5112.4737607999705,,Distracting_response,4.0,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,5137.346939800074,,Other_response,3.5999999999999996,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,5140.372977199964,,Sounds_response,3.7000000000000015,Game Task,1,6,,Marker Started at 2,The Long Dark
+ESQ,5143.531492100097,,Problem_response,6.800000000000008,Game Task,1,6,,Marker Started at 9,The Long Dark
+ESQ,5146.325583399972,,Future_response,8.000000000000007,Game Task,1,6,,Marker Started at 9,The Long Dark
+ESQ,5149.276647000108,,Intrusive_response,2.8,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,5152.563615899999,,Knowledge_response,7.299999999999993,Game Task,1,6,,Marker Started at 4,The Long Dark
+ESQ,5155.699452799978,,Emotion_response,5.200000000000006,Game Task,1,6,,Marker Started at 7,The Long Dark
+ESQ,5200.639339999994,,Words_response,7.499999999999991,Game Task,1,6,,Marker Started at 5,The Long Dark
+ESQ,5256.0694047000725,,Past_response,5.100000000000007,Game Task,1,6,,Marker Started at 7,The Long Dark
+ESQ,5265.121167900041,,Deliberate_response,7.9000000000000075,Game Task,1,6,,Marker Started at 10,The Long Dark
+ESQ,5328.445366400061,,Absorption_response,4.500000000000002,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,5330.871187299956,,Self_response,4.600000000000001,Game Task,1,6,,Marker Started at 3,The Long Dark
+ESQ,5336.761470299913,,Focus_response,3.9000000000000026,Game Task,1,6,,Marker Started at 6,The Long Dark
+ESQ,5339.725425600074,,Detailed_response,7.0,Game Task,1,6,,Marker Started at 7,The Long Dark
+ESQ,5341.971213300014,,Images_response,7.0,Game Task,1,6,,Marker Started at 7,The Long Dark
+ 
+Runtime Mod,-14
+EXPERIMENT DATA:,Game Task
+Start Time,5341.975430600112
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,5809.326460300013,,,,,,,,,
+ESQ,5817.022210299969,,Detailed_response,7.000000000000007,Game Task,1,6,,Marker Started at 9,Viewfinder
+ESQ,5819.285143699963,,Future_response,3.0,Game Task,1,6,,Marker Started at 3,Viewfinder
+ESQ,5821.630067500053,,Intrusive_response,7.000000000000007,Game Task,1,6,,Marker Started at 9,Viewfinder
+ESQ,5823.720462299883,,Self_response,3.2999999999999985,Game Task,1,6,,Marker Started at 5,Viewfinder
+ESQ,5825.375395799987,,Emotion_response,2.0,Game Task,1,6,,Marker Started at 2,Viewfinder
+ESQ,5828.803547800053,,Problem_response,6.199999999999996,Game Task,1,6,,Marker Started at 5,Viewfinder
+ESQ,5831.881772299996,,Deliberate_response,2.1999999999999993,Game Task,1,6,,Marker Started at 3,Viewfinder
+ESQ,5835.166190000018,,Sounds_response,3.900000000000006,Game Task,1,6,,Marker Started at 7,Viewfinder
+ESQ,5838.3802424999885,,Absorption_response,4.3000000000000025,Game Task,1,6,,Marker Started at 6,Viewfinder
+ESQ,5841.72392280004,,Words_response,4.400000000000007,Game Task,1,6,,Marker Started at 7,Viewfinder
+ESQ,5845.4039384000935,,Images_response,6.399999999999998,Game Task,1,6,,Marker Started at 2,Viewfinder
+ESQ,5848.098787599942,,Other_response,6.0,Game Task,1,6,,Marker Started at 6,Viewfinder
+ESQ,5850.821744499961,,Knowledge_response,7.0,Game Task,1,6,,Marker Started at 7,Viewfinder
+ESQ,5853.466368600028,,Distracting_response,7.100000000000003,Game Task,1,6,,Marker Started at 8,Viewfinder
+ESQ,5856.434124700027,,Focus_response,5.30000000000001,Game Task,1,6,,Marker Started at 8,Viewfinder
+ESQ,5859.6434996000025,,Past_response,6.400000000000013,Game Task,1,6,,Marker Started at 10,Viewfinder
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,6029.593943200074,,,,,,,,,
+ESQ,6033.244071200024,,Sounds_response,5.400000000000009,Game Task,1,6,,Marker Started at 8,Viewfinder
+ESQ,6035.46630729991,,Problem_response,8.100000000000003,Game Task,1,6,,Marker Started at 9,Viewfinder
+ESQ,6039.073539400008,,Words_response,6.500000000000009,Game Task,1,6,,Marker Started at 9,Viewfinder
+ESQ,6041.895974500105,,Focus_response,7.9000000000000075,Game Task,1,6,,Marker Started at 10,Viewfinder
+ESQ,6044.221714999992,,Intrusive_response,7.200000000000006,Game Task,1,6,,Marker Started at 9,Viewfinder
+ESQ,6046.623649700079,,Self_response,7.299999999999992,Game Task,1,6,,Marker Started at 5,Viewfinder
+ESQ,6048.996135199908,,Absorption_response,7.3999999999999915,Game Task,1,6,,Marker Started at 5,Viewfinder
+ESQ,6052.326229600003,,Images_response,5.899999999999998,Game Task,1,6,,Marker Started at 4,Viewfinder
+ESQ,6054.571559499949,,Past_response,5.799999999999998,Game Task,1,6,,Marker Started at 4,Viewfinder
+ESQ,6056.8319778000005,,Detailed_response,7.599999999999991,Game Task,1,6,,Marker Started at 5,Viewfinder
+ESQ,6061.135735000018,,Distracting_response,4.100000000000017,Game Task,1,6,,Marker Started at 10,Viewfinder
+ESQ,6064.273399400059,,Emotion_response,6.999999999999996,Game Task,1,6,,Marker Started at 2,Viewfinder
+ESQ,6066.06230910006,,Knowledge_response,7.0,Game Task,1,6,,Marker Started at 7,Viewfinder
+ESQ,6068.401651700027,,Other_response,5.699999999999998,Game Task,1,6,,Marker Started at 4,Viewfinder
+ESQ,6070.174128399929,,Future_response,2.0,Game Task,1,6,,Marker Started at 2,Viewfinder
+ESQ,6072.594556000084,,Deliberate_response,4.200000000000001,Game Task,1,6,,Marker Started at 3,Viewfinder
+EXPERIMENT DATA:,Experience Sampling Questions,,,,,,,,,
+Start Time,6227.344218000071,,,,,,,,,
+ESQ,6236.81054649991,,Past_response,7.800000000000004,Game Task,1,6,,Marker Started at 9,Viewfinder
+ESQ,6242.928401499987,,Distracting_response,3.1999999999999984,Game Task,1,6,,Marker Started at 5,Viewfinder
+ESQ,6245.290630500065,,Focus_response,3.0,Game Task,1,6,,Marker Started at 3,Viewfinder
+ESQ,6255.232577899937,,Emotion_response,5.899999999999999,Game Task,1,6,,Marker Started at 3,Viewfinder
+ESQ,6262.08642060007,,Absorption_response,7.0,Game Task,1,6,,Marker Started at 7,Viewfinder
+ESQ,6264.492139100097,,Future_response,10.0,Game Task,1,6,,Marker Started at 10,Viewfinder
+ESQ,6269.270658700028,,Self_response,7.199999999999994,Game Task,1,6,,Marker Started at 3,Viewfinder
+ESQ,6272.586570200045,,Deliberate_response,4.600000000000003,Game Task,1,6,,Marker Started at 6,Viewfinder
+ESQ,6276.761562899919,,Knowledge_response,10.0,Game Task,1,6,,Marker Started at 10,Viewfinder
+ESQ,6279.064846700057,,Images_response,9.0,Game Task,1,6,,Marker Started at 9,Viewfinder
+ESQ,6283.362563400064,,Other_response,5.000000000000007,Game Task,1,6,,Marker Started at 7,Viewfinder
+ESQ,6286.136935800081,,Detailed_response,2.0,Game Task,1,6,,Marker Started at 2,Viewfinder
+ESQ,6288.942879700102,,Intrusive_response,6.999999999999993,Game Task,1,6,,Marker Started at 5,Viewfinder
+ESQ,6291.192326300079,,Words_response,7.499999999999995,Game Task,1,6,,Marker Started at 6,Viewfinder
+ESQ,6293.489094800083,,Problem_response,5.800000000000004,Game Task,1,6,,Marker Started at 7,Viewfinder
+ESQ,6295.64407239994,,Sounds_response,8.399999999999995,Game Task,1,6,,Marker Started at 7,Viewfinder
