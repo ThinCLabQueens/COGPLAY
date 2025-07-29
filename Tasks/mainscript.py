@@ -9,6 +9,7 @@ import csv
 import sys
 import yaml
 import string
+import logging
 
 # from Tasks.taskScripts import memoryTask
 # import taskScripts
@@ -358,80 +359,97 @@ class taskgroup(taskbattery, metadatacollection):
 
 ### HAVE TO EXPOSE ESQ TASK TO MOVIE SCRIPT
 
+logger = logging.getLogger(__name__)
+
 if __name__ == "__main__":
 
-    with open(os.path.join(os.pardir, "config.yaml"), "r") as f:
-        config = yaml.safe_load(f)
-    # Info Dict
-    INFO = {
-        "Experiment Seed": random.randint(1, 9999999),
-        "Subject": "Enter Name Here",
-        "Number of Games": 6
-    }
 
-    # Main and backup data file
+    logging.basicConfig(filename='cogplay_run.log',
+                        filemode='a',
+                        format='%(asctime)s,%(msecs)03d %(name)s %(levelname)s %(message)s',
+                        datefmt='%Y-%m-%d %H:%M:%S',
+                        level=logging.DEBUG)
 
-    # Run the GUI and save output to logfile
-    metacoll = metadatacollection(INFO)
-    metacoll.rungui()
-    metacoll.collect_metadata()
-    metacoll.INFO["Block Runtime"] = 48000
+    logger.info("Running Cogplay") 
 
-    # Defining output datafile
-    datafile = str(
-        os.getcwd()
-        + "/log_file/output_log_{}_{}.csv".format(
-            metacoll.INFO["Subject"], metacoll.INFO["Experiment Seed"]
-        )
-    )
-    datafileBackup = "log_file/testfullbackup.csv"
-    if not os.path.exists("tmp"):
-        os.mkdir("tmp")
+    try:
 
-    ESQTask = task(
-        ESQ,
-        datafile,
-        datafileBackup,
-        "Experience Sampling Questions",
-        metacoll.sbINFO.data,
-        int(metacoll.INFO["Block Runtime"]),
-        None,
-        esq=True,
-    )
+        with open(os.path.join(os.pardir, "config.yaml"), "r") as f:
+            config = yaml.safe_load(f)
+        # Info Dict
+        INFO = {
+            "Experiment Seed": random.randint(1, 9999999),
+            "Subject": "Enter Name Here",
+            "Number of Games": 6
+        }
 
-    numgames = metacoll.INFO["Number of Games"]
+        # Main and backup data file
 
-    games = list(string.ascii_uppercase)[:numgames]
+        # Run the GUI and save output to logfile
+        metacoll = metadatacollection(INFO)
+        metacoll.rungui()
+        metacoll.collect_metadata()
+        metacoll.INFO["Block Runtime"] = 48000
 
-    gamedf = pd.read_csv('taskScripts/resources/Game_Task/gamelist.csv')
-
-    gamedf['gamecode'] = np.random.permutation(gamedf['gamecode'].values)
-
-    gamedf = gamedf[gamedf['gamecode'].isin(games)]   
-
-    # Defining each task as a task object
-    gamegroup = []
-    for game in games:
-        gamegroup.append(
-            task(
-                gameTask,
-                datafile,
-                game,
-                "Game Task",
-                metacoll.sbINFO.data,
-                int(metacoll.INFO["Block Runtime"]),
-                gamedf,
+        # Defining output datafile
+        datafile = str(
+            os.getcwd()
+            + "/log_file/output_log_{}_{}.csv".format(
+                metacoll.INFO["Subject"], metacoll.INFO["Experiment Seed"]
             )
         )
+        datafileBackup = "log_file/testfullbackup.csv"
+        if not os.path.exists("tmp"):
+            os.mkdir("tmp")
 
-    random.shuffle(gamegroup)
-    game_main = taskgroup([gamegroup], "resources/group_inst/movie_main.txt")
+        ESQTask = task(
+            ESQ,
+            datafile,
+            datafileBackup,
+            "Experience Sampling Questions",
+            metacoll.sbINFO.data,
+            int(metacoll.INFO["Block Runtime"]),
+            None,
+            esq=True,
+        )
 
-    fulltasklist = [game_main]
+        numgames = metacoll.INFO["Number of Games"]
 
-    tasks = fulltasklist
+        games = list(string.ascii_uppercase)[:numgames]
 
-    tbt = taskbattery(tasks, ESQTask, INFO)
+        gamedf = pd.read_csv('taskScripts/resources/Game_Task/gamelist.csv')
 
-    tbt.run_battery()
-    print("Success")
+        gamedf['gamecode'] = np.random.permutation(gamedf['gamecode'].values)
+
+        gamedf = gamedf[gamedf['gamecode'].isin(games)]   
+
+        # Defining each task as a task object
+        gamegroup = []
+        for game in games:
+            gamegroup.append(
+                task(
+                    gameTask,
+                    datafile,
+                    game,
+                    "Game Task",
+                    metacoll.sbINFO.data,
+                    int(metacoll.INFO["Block Runtime"]),
+                    gamedf,
+                )
+            )
+
+        random.shuffle(gamegroup)
+        game_main = taskgroup([gamegroup], "resources/group_inst/movie_main.txt")
+
+        fulltasklist = [game_main]
+
+        tasks = fulltasklist
+
+        tbt = taskbattery(tasks, ESQTask, INFO)
+        
+        tbt.run_battery()
+        print("Success")
+
+    except Exception as e:     # most generic exception you can catch
+
+        logger.info(str(e))
